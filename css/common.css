@@ -1,0 +1,71 @@
+
+body{
+  font-family: "游明朝";
+  font-weight:500;
+  font-size: 16px;
+  background-color: #ffffe5;
+}
+h3{
+  padding: 15px;
+  font-weight:bolder;
+}
+h4{
+  padding-left: 10px;
+}
+li{
+  list-style: none;
+  margin-bottom: 10px;
+}
+table{
+  border: solid 2px #191970;
+  margin-top:10px
+}
+th{
+  border: solid 1px #191970;
+}
+.table_th{
+  background-color: #afeeee;
+}
+td{
+  border: solid 0.5px #191970;
+}
+.syutten{
+  font-size: 13px;
+  margin:5px;
+}
+.memo_top{
+  background-color: #c1ffe0;
+  border-radius: 1em;
+}
+.memo_contents{
+  background-color:#eaffea;
+  border:solid 1px #009854;
+  border-radius: 1em;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+.memo_midashi{
+  border-bottom:dashed 1px #79c06e;
+}
+.memo_midashi.memo_title{
+  list-style: decimal-leading-zero;
+  font-weight: bolder;
+}
+.memo_list{
+  background-color:#dbffff;
+  border:hidden 1px #339900;
+  border-radius: 1em;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.memo_footer{
+  background-color: #cce5ff;
+  border-radius: 1em;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+}
+.memo_footer.link{
+}
