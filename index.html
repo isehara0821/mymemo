@@ -6,18 +6,23 @@
   <link rel="stylesheet" href="./css/common.css">
   <title>目次</title>
 </head>
-<body>
-  <div class="index_head">色々メモ</div>
-  <div class="index_contents">
-    <form action="http://www.google.co.jp/search" method="get">
-      <input class="find_form" type="search" placeholder="Google検索">
-      <input type="submit" value="検索">
-    </form>
-    <form action="https://isehara0821.github.io/mymemo/" method="get">
-      <input class="find_form" type="search" placeholder="サイト内検索">
-      <input type="submit" value="検索">
-    </form>
-    <ul>
+<body index_header>
+  <header class="index_header">
+    <div>色々メモ</div>
+      <nav class="header_form">
+        <form class="search_form" action="https://www.google.co.jp/search" method="get" target="
+        ">
+          <input type="search" placeholder="Google検索">
+          <input type="submit" value="検索">
+        </form>
+        <form class="search_form" action="https://isehara0821.github.io/mymemo/" method="get">
+          <input type="search" placeholder="サイト内検索">
+          <input type="submit" value="検索">
+        </form>
+      </nav>
+  </header>
+    <div class="index_contents">
+      <ul>
       <li>歴史</li>
       <ul>
         <li><a href="./rekishi/japan/japan_index.html">日本</a></li>
@@ -41,6 +46,7 @@
           <ul>
             <li><a href="http://www.htmq.com/" target="_blank"><img src="./img/html_reference.gif" alt="HTMLクイックリファレンス" width="7%" height="7%"></a></li>
             <li><a href="https://www.colordic.org/" target="_blank">原色大辞典</a></li>
+            <li><a href="https://webukatu.com/wordpress/blog/8571/" target="_blank">htmlでの折り畳み方法</a></li>
           </ul>
           <li>リンク集 - Git Hub</li>
           <ul>
