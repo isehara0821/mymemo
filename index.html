@@ -10,20 +10,19 @@
   <header class="index_header">
     <div>色々メモ</div>
       <nav class="header_form">
-        <form class="search_form" action="https://www.google.co.jp/search" method="get" target="
-        ">
-          <input type="search" placeholder="Google検索">
+        <form class="search_form" action="https://www.google.co.jp/" method="post" target="">
+          <input type="search" name="search" placeholder="Google検索">
           <input type="submit" value="検索">
         </form>
-        <form class="search_form" action="https://isehara0821.github.io/mymemo/" method="get">
-          <input type="search" placeholder="サイト内検索">
-          <input type="submit" value="検索">
+        <form class="search_form" action="https://isehara0821.github.io/mymemo/index.html" method="post">
+          <input type="search" name="search_own" placeholder="サイト内検索">
+          <input type="submit" name="submit_own" value="検索">
         </form>
       </nav>
   </header>
     <div class="index_contents">
       <ul>
-      <li>歴史</li>
+      <li class="index_1">歴史</li>
       <ul>
         <li><a href="./rekishi/japan/japan_index.html">日本</a></li>
         <li><a href="./rekishi/china/china_index.html">中国</a></li>
@@ -32,50 +31,84 @@
         <li>イギリス</li>
         <li>フランス</li>
       </ul>
-      <li>金融</li>
+      <li class="index_1">金融</li>
       <ul>
         <li>一般</li>
         <li>証券</li>
         <li>AML</li>
       </ul>
-      <li>プログラミング</li>
+      <li class="index_1">プログラミング</li>
         <ul>
           <li> <a href="./programing/html.html">HTML</a></li>
           <li> <a href="./programing/css.html">CSS</a></li>
-          <li class="outside_link">リンク集 - HTML</li>
+          <li class="index_2">リンク集 - HTML</li>
           <ul>
             <li><a href="http://www.htmq.com/" target="_blank"><img src="./img/html_reference.gif" alt="HTMLクイックリファレンス" width="7%" height="7%"></a></li>
             <li><a href="https://www.colordic.org/" target="_blank">原色大辞典</a></li>
             <li><a href="https://webukatu.com/wordpress/blog/8571/" target="_blank">htmlでの折り畳み方法</a></li>
           </ul>
-          <li>リンク集 - Git Hub</li>
+          <li class="index_2">リンク集 - Git Hub</li>
           <ul>
             <li><a href="https://github.com/" target="_blank">Git Hub</a></li>
           </ul>
+          <li class="index_2">リンク集 - SOAP</li>
+          <ul>
+            <li><a href="https://atmarkit.itmedia.co.jp/ait/articles/0303/18/news003.html" target="_blank">@IT（WSDL：WEBサービスの基本）</a></li>
+            <li><a href="http://j-caw.co.jp/blog/?p=1477" target="_blank">SOAPのWSDLについて（個人ブログ）</a></li>
+          </ul>
         </ul>
-      <li>英語</li>
+      <li class="index_1">英語</li>
       <ul>
         <li>単語</li>
         <li>文法</li>
       </ul>
-      <li>ゲーム</li>
+      <li class="index_1">ゲーム</li>
       <ul>
-        <li>ゲームリンク集</li>
+        <li class="index_2">ポケモン</li>
+        <ul>
+          <li><a href="https://yakkun.com/" target="_blank"><img src="./img/pokemon_kouryaku.png" alt="ポケモン徹底攻略" width="25%" height="25%"></a></li>
+          <li><a href="https://pokemongo.gamewith.jp/article/show/97833" target="_blank">ポケモンGo：タスク一覧</a></li>
+          <li><a href="https://gamewith.jp/pokemon-sword-shield/article/show/176684" target="_blank">剣盾：お金稼ぎ</a></li>
+          <li><a href="https://gamewith.jp/pokemon-sword-shield/article/show/171529" target="_blank">剣盾：ポケジョブと努力値</a></li>
+          <li><a href="https://yakkun.com/swsh/cramorant_recipe.htm?item=795" target="_blank">剣盾：ウッウロボ</a></li>
+        </ul>
+        <li class="index_2">グラブル</li>
         <li><a href="https://xn--bck3aza1a2if6kra4ee0hf.gamewith.jp/" target="_blank"><img src="./img/gamewith_granblue.webp" alt="Game With（グラブル）" width="15%" height="15%"></a></li>
+        <li class="index_2">Saga</li>
         <li><a href="https://gamewith.jp/saga-reuniverse/" target="_blank"><img src="./img/gamewith_romasagars.jfif" alt="Game with ロマサガRS" width="15%" height="15%"></a></li>
-        <li><a href="https://pokemongo.gamewith.jp/article/show/97833" target="_blank">ポケモンGo タスク一覧</a></li>
-        <li><a href="https://yakkun.com/" target="_blank"><img src="./img/pokemon_kouryaku.png" alt="ポケモン徹底攻略" width="25%" height="25%"></a></li>
-        <li><a href="https://altema.jp/dffoo/" target="_blank">オペオム攻略</a></li>
+        <li class="index_2">FF</li>
+        <ul>
+          <li><a href="https://altema.jp/dffoo/" target="_blank">オペオム攻略</a></li>
+        </ul>
       </ul>
-      <li>その他</li>
+      <li class="index_1">スポーツ</li>
       <ul>
-        <li>お茶</li>
-        <li><a href="https://www.alit.city.iruma.saitama.jp/070/010/010/20200101175000.html" target="_blank">お茶の種類</a></li>
+        <li class="index_2">ニュース・データ</li>
+        <ul>
+          <li><a href="https://news.yahoo.co.jp/categories/sports" target="_blank">Yahoo!ニュース</a></li>
+          <li><a href="https://sports.yahoo.co.jp/" target="_blank">スポナビ</a></li>
+          <li><a href="https://www.siraida.com/index.php" target="_blank">Siraida</a></li>
+        </ul>
+        <li class="index_2">公式サイト</li>
+        <ul>
+          <li><a href="https://www.f-marinos.com/" target="_blank">マリノス</a></li>
+          <li><a href="https://kawasaki-bravethunders.com/" target="_blank">ブレイブサンダース</a></li>
+          <li><a href="https://www.yakult-swallows.co.jp/" target="_blank">ヤクちゃん</a></li>
+        </ul>
+      </ul>
+      <li class="index_1">その他</li>
+      <ul>
+        <li class="index_2">お茶</li>
+        <ul>
+          <li><a href="https://www.alit.city.iruma.saitama.jp/070/010/010/20200101175000.html" target="_blank">お茶の種類</a></li>
+        </ul>
       </ul>
       <ul>
-        <li>ストレッチ・筋トレ</li>
-        <li><a href="https://style.nikkei.com/article/DGXMZO37074120Z21C18A0000000/" target="_blank">スマホ首のストレッチ</a></li>
-        <li><a href="https://www.jbpo.or.jp/crossheart/maintenance/17/" target="_blank">肩こりの筋トレ</a></li>
+        <li class="index_2">ストレッチ・筋トレ</li>
+        <ul>
+          <li><a href="https://style.nikkei.com/article/DGXMZO37074120Z21C18A0000000/" target="_blank">スマホ首のストレッチ</a></li>
+          <li><a href="https://www.jbpo.or.jp/crossheart/maintenance/17/" target="_blank">肩こりの筋トレ</a></li>
+        </ul>
       </ul>
     </ul>
   </div>
