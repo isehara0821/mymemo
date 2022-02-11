@@ -16,12 +16,15 @@ h4{
 }
 h5{
   font-size: 18px;
+  border-bottom:1px solid #426579;
+  border-left:10px solid #426579;
+  padding:7px;
 }
 h6{
   padding-left: 20px;
   font-size: 17px;
 }
-li{
+ul{
   list-style: none;
   margin-bottom: 10px;
 }
@@ -121,4 +124,7 @@ p{
   padding: 5px 5px 5px 10px;
   border-radius: 1em;
   margin: 10px;
+}
+.num_list{
+  list-style-type:decimal;
 }

@@ -4,19 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
   <link rel="stylesheet" href="./css/common.css">
+  <link rel="icon" type="image/png" href="./img/pochama.png">
   <title>目次</title>
 </head>
 <body index_header>
   <header class="index_header">
     <div>色々メモ</div>
       <nav class="header_form">
-        <form class="search_form" action="https://www.google.co.jp/" method="post" target="">
-          <input type="search" name="search" placeholder="Google検索">
-          <input type="submit" value="検索">
+        <form class="search_form" method="get" action="http://www.google.co.jp/search" target="_blank">
+          <input type="text" name="q" placeholder="Google検索">
+          <input type="submit" name="btng" value="検索">
+          <input type="hidden" name="hl" value="ja">
         </form>
-        <form class="search_form" action="https://isehara0821.github.io/mymemo/index.html" method="post">
-          <input type="search" name="search_own" placeholder="サイト内検索">
-          <input type="submit" name="submit_own" value="検索">
+        <form class="search_form" method="get" action="http://www.google.co.jp/search" target="_blank">
+          <input type="text" name="q" placeholder="サイト内検索">
+          <input type="submit" name="btng" value="検索">
+          <input type="hidden" name="hl" value="ja">
+          <input type="hidden" name="sitesearch" value="./index.html">
         </form>
       </nav>
   </header>
@@ -98,6 +102,12 @@
         </ul>
       </ul>
       <li class="index_1">その他</li>
+      <ul>
+        <li class="index_2">オンラインショップ</li>
+        <ul>
+          <li><a href="https://shop.koikeya.co.jp/shop/default.aspx" target="_blank">湖池屋</a></li>
+        </ul>
+      </ul>
       <ul>
         <li class="index_2">お茶</li>
         <ul>
