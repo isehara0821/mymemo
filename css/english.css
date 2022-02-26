@@ -1,0 +1,15 @@
+/* tooltipsを定義するcss */
+<style type="text/css">
+.a{}
+.exmp_sent{
+  margin-left: 15px;
+}
+.trancelate{
+  margin-left: 15px;
+  color: #eaffea;
+}
+.trance_desc{
+  margin-left: 20px;
+  font-size: 80%;
+}
+</style>
