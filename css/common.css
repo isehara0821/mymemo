@@ -1,3 +1,4 @@
+/* tooltipsを定義するcss */
 
 body{
   font-family: "游明朝";
@@ -6,26 +7,79 @@ body{
   background-color: #ffffe5;
   padding-bottom: 70px;
 }
-h3{
+h2{
   padding: 15px;
   font-weight:bolder;
   font-size: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
-h4{
+h3{
   font-size: 19px;
 }
-h5{
+.common_chapter{
+  background-color:#e0ffe0 ;
+  border:solid 1px #009854;
+  padding: 5px 5px 5px 10px;
+  border-radius: 1em;
+  margin: 10px;
+}
+h4{
   font-size: 18px;
-  border-bottom:1px solid #426579;
-  border-left:10px solid #426579;
   padding:7px;
+  margin:2px;
+}
+.rekshi_h5{
+  border-left:10px solid #007b3a;
+  border-bottom:1px solid #8cc8b4;
+}
+.common_seciton{
+  border-left:10px solid #007b3a;
+  border-bottom:1px solid #8cc8b4;
+}
+h5{
+  font-size: 17px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-bottom: 2px;
 }
 h6{
-  padding-left: 20px;
-  font-size: 17px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-right: 0px;
+  margin-bottom: 2px;
+}
+.ol1{
+  list-style-type: decimal;
+}
+.ol2{
+  list-style-type: upper-roman;
+}
+.ol3{
+  list-style-type: lower-roman;
+}
+.ol4{
+  list-style-type: lower-armenian;
+}
+.common_h5:after{
+  content: "";
+  height: 4px;
+  display: block;
+  background: -webkit-linear-gradient(to right, rgb(140, 200, 180), transparent);
+  background: linear-gradient(to right, rgb(140, 200, 180), transparent);
+}
+.common_h6:after{
+  content: "";
+  height: 4px;
+  display: block;
+  background: -webkit-linear-gradient(to right, rgb(120, 200, 230), transparent);
+  background: linear-gradient(to right, rgb(120, 200, 230), transparent);
 }
 ul{
   list-style: none;
+  margin-top: 3px;
   margin-bottom: 10px;
 }
 table{
@@ -40,6 +94,10 @@ th{
 }
 td{
   border: solid 0.5px #191970;
+}
+.td_center{
+  text-align: center;
+  vertical-align: middle;
 }
 .index_header{
   position:fixed;
@@ -68,6 +126,7 @@ p{
   margin-right: 20px;
 }
 .index_contents{
+  background-color: #ffffe5;
   padding-top: 70px;
 }
 .syutten{
@@ -77,6 +136,9 @@ p{
 .memo_top{
   background-color: #c1ffe0;
   border-radius: 1em;
+  border:solid 1px #002900;
+  margin-bottom: 10px;
+  padding: 0;
 }
 .memo_contents{
   background-color:#eaffea;
@@ -88,6 +150,7 @@ p{
 }
 .memo_midashi{
   border-bottom:dashed 1px #79c06e;
+  font-size: 19px;
 }
 .memo_midashi.memo_title{
   list-style: decimal-leading-zero;
@@ -98,7 +161,7 @@ p{
   border:hidden 1px #339900;
   border-radius: 1em;
   padding: 5px 5px 5px 10px;
-  margin-left: 10px;
+  margin-left: 25px;
 }
 .memo_footer{
   background-color: #e0efff;
@@ -112,7 +175,7 @@ p{
 .memo_footer .link{
   margin-right: 20px;
 }
-.jidai{
+.h5_frame{
   background-color:#e0ffe0 ;
   border:solid 1px #009854;
   padding: 5px 5px 5px 10px;
@@ -125,6 +188,18 @@ p{
   border-radius: 1em;
   margin: 10px;
 }
-.num_list{
-  list-style-type:decimal;
+summary {
+	cursor: pointer;
+  display: block;
+}
+details summary::before {
+  font-family: FontAwesome;
+  content: '＋';
+  padding-left: 5px;
+  margin-right: 5px;
+  font-size: 19px;
+  font-weight: bold;
+}
+details[open] summary::before {
+  content: '－';
 }
