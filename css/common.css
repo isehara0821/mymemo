@@ -14,6 +14,9 @@ h2{
   padding-top: 1px;
   padding-bottom: 1px;
 }
+.h2_title{
+  
+}
 h3{
   font-size: 19px;
 }
@@ -24,14 +27,21 @@ h3{
   border-radius: 1em;
   margin: 10px;
 }
+.h3_common{
+  border-left:10px solid #007b3a;
+  border-bottom:1px solid #8cc8b4;
+}
 h4{
   font-size: 18px;
   padding:7px;
   margin:2px;
 }
-.rekshi_h5{
-  border-left:10px solid #007b3a;
-  border-bottom:1px solid #8cc8b4;
+.h4_common:after{
+  content: "";
+  height: 4px;
+  display: block;
+  background: -webkit-linear-gradient(to right, rgb(140, 200, 180), transparent);
+  background: linear-gradient(to right, rgb(140, 200, 180), transparent);
 }
 .common_seciton{
   border-left:10px solid #007b3a;
@@ -44,12 +54,26 @@ h5{
   margin-right: 0px;
   margin-bottom: 2px;
 }
+.h5_common:after{
+  content: "";
+  height: 4px;
+  display: block;
+  background: -webkit-linear-gradient(to right, rgb(140, 200, 180), transparent);
+  background: linear-gradient(to right, rgb(140, 200, 180), transparent);
+}
 h6{
   font-size: 16px;
   margin-top: 10px;
   margin-left: 25px;
   margin-right: 0px;
   margin-bottom: 2px;
+}
+.h6_common:after{
+  content: "";
+  height: 4px;
+  display: block;
+  background: -webkit-linear-gradient(to right, rgb(120, 200, 230), transparent);
+  background: linear-gradient(to right, rgb(120, 200, 230), transparent);
 }
 .ol1{
   list-style-type: decimal;
@@ -63,20 +87,8 @@ h6{
 .ol4{
   list-style-type: lower-armenian;
 }
-.common_h5:after{
-  content: "";
-  height: 4px;
-  display: block;
-  background: -webkit-linear-gradient(to right, rgb(140, 200, 180), transparent);
-  background: linear-gradient(to right, rgb(140, 200, 180), transparent);
-}
-.common_h6:after{
-  content: "";
-  height: 4px;
-  display: block;
-  background: -webkit-linear-gradient(to right, rgb(120, 200, 230), transparent);
-  background: linear-gradient(to right, rgb(120, 200, 230), transparent);
-}
+
+
 ul{
   list-style: none;
   margin-top: 3px;
@@ -86,6 +98,10 @@ table{
   border: solid 2px #191970;
   margin-top:10px
 }
+.table_border_thin{
+  border: solid 1px #009854;
+  margin-left: 22px;
+}
 th{
   border: solid 1px #191970;
 }
@@ -94,6 +110,9 @@ th{
 }
 td{
   border: solid 0.5px #191970;
+}
+.td_noborder{
+  border: none;
 }
 .td_center{
   text-align: center;
@@ -110,6 +129,18 @@ td{
 }
 p{
   text-indent: 1em;
+}
+.contents_h3{
+  margin-left: 15px;
+}
+.contents_h4{
+  margin-left: 10px;
+}
+.contents_h5{
+  margin-left: 10px;
+}
+.contents_h6{
+  margin-left: 10px;
 }
 .index_1{
   background-color: #e0efff;
@@ -175,7 +206,7 @@ p{
 .memo_footer .link{
   margin-right: 20px;
 }
-.h5_frame{
+.h3_frame{
   background-color:#e0ffe0 ;
   border:solid 1px #009854;
   padding: 5px 5px 5px 10px;
