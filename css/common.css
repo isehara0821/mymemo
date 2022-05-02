@@ -15,7 +15,7 @@ h2{
   padding-bottom: 1px;
 }
 .h2_title{
-  
+
 }
 h3{
   font-size: 19px;
@@ -50,7 +50,7 @@ h4{
 h5{
   font-size: 17px;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 6px;
   margin-right: 0px;
   margin-bottom: 2px;
 }
@@ -64,7 +64,7 @@ h5{
 h6{
   font-size: 16px;
   margin-top: 10px;
-  margin-left: 25px;
+  margin-left: 10px;
   margin-right: 0px;
   margin-bottom: 2px;
 }
