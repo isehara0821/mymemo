@@ -3,7 +3,7 @@
 body{
   font-family: "游明朝";
   font-weight:500;
-  font-size: 16px;
+  font-size: 15px;
   background-color: #ffffe5;
   padding-bottom: 70px;
 }
@@ -14,41 +14,58 @@ h2{
   padding-top: 1px;
   padding-bottom: 1px;
 }
-.h2_title{
-
+.memo_top{
+  background-color: #c1ffe0;
+  border-radius: 1em;
+  border:solid 1px #002900;
+  margin-bottom: 10px;
+  padding: 0;
 }
+.memo_contents{
+  background-color:#eaffea;
+  border:solid 1px #009854;
+  border-radius: 1em;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
 h3{
   font-size: 19px;
 }
-.common_chapter{
-  background-color:#e0ffe0 ;
-  border:solid 1px #009854;
-  padding: 5px 5px 5px 10px;
-  border-radius: 1em;
-  margin: 10px;
-}
-.h3_common{
-  border-left:10px solid #007b3a;
-  border-bottom:1px solid #8cc8b4;
-}
-h4{
+.memo_midashi{
+  /*
+  border-bottom:dashed 2px #009999;
+  */
   font-size: 18px;
-  padding:7px;
-  margin:2px;
 }
-.h4_common:after{
+.memo_midashi:after{
   content: "";
-  height: 4px;
+  height: 7px;
   display: block;
-  background: -webkit-linear-gradient(to right, rgb(140, 200, 180), transparent);
-  background: linear-gradient(to right, rgb(140, 200, 180), transparent);
+  background: -webkit-linear-gradient(to right top, #009999 10%, transparent);
+  background: linear-gradient(to right top, #009999 10%, transparent);
+  border-radius:8px;
+}
+
+.memo_midashi.memo_title{
+  list-style: decimal-leading-zero;
+  font-weight: bolder;
+}
+
+h4{
+  font-size: 17px;
+  padding:3px;
+  margin-top:20px;
+  margin-bottom:7px;
 }
 .common_seciton{
-  border-left:10px solid #007b3a;
-  border-bottom:1px solid #8cc8b4;
+  border-left:4px solid #009999;
+  border-bottom:3px solid #8cc8b4;
+  border-radius:6px;
 }
 h5{
-  font-size: 17px;
+  font-size: 16px;
   margin-top: 10px;
   margin-left: 6px;
   margin-right: 0px;
@@ -58,11 +75,11 @@ h5{
   content: "";
   height: 4px;
   display: block;
-  background: -webkit-linear-gradient(to right, rgb(140, 200, 180), transparent);
-  background: linear-gradient(to right, rgb(140, 200, 180), transparent);
+  background: -webkit-linear-gradient(to right, #8cc8b4, transparent);
+  background: linear-gradient(to right, #8cc8b4, transparent);
 }
 h6{
-  font-size: 16px;
+  font-size: 15px;
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 0px;
@@ -87,8 +104,6 @@ h6{
 .ol4{
   list-style-type: lower-armenian;
 }
-
-
 ul{
   list-style: none;
   margin-top: 3px;
@@ -163,29 +178,6 @@ p{
 .syutten{
   font-size: 13px;
   margin:5px;
-}
-.memo_top{
-  background-color: #c1ffe0;
-  border-radius: 1em;
-  border:solid 1px #002900;
-  margin-bottom: 10px;
-  padding: 0;
-}
-.memo_contents{
-  background-color:#eaffea;
-  border:solid 1px #009854;
-  border-radius: 1em;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  padding-bottom: 15px;
-}
-.memo_midashi{
-  border-bottom:dashed 1px #79c06e;
-  font-size: 19px;
-}
-.memo_midashi.memo_title{
-  list-style: decimal-leading-zero;
-  font-weight: bolder;
 }
 .memo_list{
   background-color: #cee4ae;
