@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/tooltips.css">
+    <link rel="stylesheet" href="../css/english.css">
+    <link rel="icon" type="image/png" href="../img/pochama.png">
+    <title>一般常識 - 数学 -</title>
+  </head>
+  <body>
+    <div class="common_top">
+      <h2 class="h2_title">数学</h2>
+    </div>
+    <div class="common_index">
+      <h3 class="common_index_title">目次</h3>
+      <ul class="list_decimal">
+        <li><a href="#kakuritsu">確率</a></li>
+        <li><a href="#junretsu">順列</a></li>
+        <li><a href="#kumiawase">組み合わせ</a></li>
+      </ul>
+    </div>
+    <div class="common_contents">
+      <h3 class="common_midashi"><a name="kakuritsu">確率</a></h3>
+      <div class="contents_h3">
+        <h4 class="common_seciton">確率の求め方</h4>
+        <div class="contents_h4">
+          起こりうるすべての事象を U、ある事象を A とすると、A が起こる確率 P(A) は<br>
+          <span class="strong_22">P(A) = n(A) / n(U)</span><br>
+          n(A) ：A が起こる場合の数<br>
+          n(U) ：U が起こる場合の数
+        </div>
+        <h4 class="common_seciton">例題</h4>
+        <div class="contents_h4">
+          <h5 class="common_h5">問1</h5>
+          <div class="contents_h5">
+            <div class="question">
+              問. 1, 2, 3, 4, 5, 6, 7, 8から異なる3つの数をとり、3桁の整数をつくるとき、次の確率を求めよ。
+              <ul class="list_decimal">
+                <li>偶数になる確率</li>
+                <li>4の倍数になる確率</li>
+                <li>650よりも大きくなる確率</li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="common_h5">解説</h5>
+          <div class="contents_h5">
+            まず、3桁の整数の作り方の総数(n(U))を求める<br>
+            n(U) = <span class='soezji'>8</span>P<span class='soezji'>3</span> = 8 * 7 * 6 = 336<br>
+            となる。
+            <h6 class="common_h6">1. 偶数になる確率</h6>
+            <div class="contents_h6">
+              1の位が偶数であれば整数も偶数になり、1の位が偶数でなければ整数も偶数にならない。つまり、1の位が2, 4, 6, 8のいずれかであれば偶数になる。この場合の数は<br>
+              n(A) = <span class='soezji'>4</span>P<span class='soezji'>3</span> = 4 * 7 * 6 = 168<br>
+              n(U) = 336<br>
+              であるから、<br>
+              <span class="strong_18">168/336 = 1/2</span><br>
+              となる。
+            </div>
+            <h6 class="common_h6">2. 4の倍数になる確率</h6>
+            <div class="contents_h6">
+              「4の倍数になる」という条件は「下二桁が4の倍数（あるいは00）」と同義で、この問題で00はありえない。つまり、下二桁が2, 16, 24, 28, 32, 36, 48, 52, 56, 64, 68, 72, 76, 84の14通りとなる。<br>
+              それぞれ2種類の数を使用しているから、残った百の位の数はそれぞれ(8 - 2)6通り考えられる。そうすると
+              n(A) = 14 * 6 = 84
+              n(U) = 336<br>
+              であるから、<br>
+              <span class="strong_18">84/336 = 1/4</span><br>
+              となる。
+            </div>
+            <h6 class="common_h6">3. 650よりも大きくなる確率</h6>
+            <div class="contents_h6">
+              百の位が7あるいは8の時は、2*7*6<br>
+              百の位が6の時は十の位が5,7,8の3通りなので、1*3*6<br>
+              n(A) = 2*7*6 + 3*6
+              n(U) = 336<br>
+              であるから、<br>
+              <span class="strong_18">84+18/336 = 17/56</span><br>
+              となる。
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="common_midashi"><a name="junretsu">順列</a></h3>
+      <div class="contents_h3">
+        <h4 class="common_seciton">順列の求め方</h4>
+        <div class="contents_h4">
+          人の並び方など、順番に意味がある問題では、順列の考え方で場合の数を求められる。<br>
+          A、B が隣り合う事象をX、全事象をUとし、それぞれの場合の数を n(X)、n(U) とすると以下のようになる。<br>
+          <span class="strong_22">P(A) = n(A) / n(U)</span>
+        </div>
+        <h4 class="common_seciton">例題</h4>
+        <div class="contents_h4">
+          <h5 class="common_h5">問2</h5>
+          <div class="contents_h5">
+            <div class="question">
+              問. A、B、C、D、E の 5 人が 1 列に並ぶとき A、B が隣り合う確率を求めよ。
+            </div>
+          </div>
+          <h5 class="common_h5">解説</h5>
+          <div class="contents_h5">
+            <h6 class="common_h6">[step1]</h6>
+            <div class="contents_h6">
+            n(U) は 5 人全員の並び方の総数であるから、<br>
+            n(U) = <span class='soezji'>5</span>P<span class='soezji'>5</span> = 5! = 5 * 4 * 3 * 2 * 1 = 120<br>
+            となる。<br>
+            </div>
+            <h6 class="common_h6">[step2]</h6>
+            <div class="contents_h6">
+              A、B が隣り合う並び方は、A、B の 2 人をまとめて 1 人ととらえ、4 人の並べ方を考えたあと、A、B の並べ方を考えればよい。<br>
+              4 人の並べ方は<span class='soezji'>4</span>P<span class='soezji'>4</span>、2 人の並べ方は <span class='soezji'>2</span>P<span class='soezji'>2</span>であるから、<br>
+              n(X) = <span class='soezji'>4</span>P<span class='soezji'>4</span> * <span class='soezji'>2</span>P<span class='soezji'>2</span> = 4! * 2! = 4 * 3 * 2 * 1 * 2 * 2 * 1 = 24 * 2 = 48<br>
+            </div>
+            <h6 class="common_h6">[step3]</h6>
+            <div class="contents_h6">
+              よって結果は<br><span class="strong_18">P(X) = n(X) / n(U) = 48/120 = 2/5</span><br>となる。
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="common_midashi"><a name="kumiawase">組み合わせ</a></h3>
+      <div class="contents_h3">
+        <h4 class="common_seciton">順列の求め方</h4>
+        <div class="contents_h4">
+          ただ何かを選ぶ／取り出すなど、順番を考える必要がないときは、組み合わせの考えで解くことができる。<br>
+          この問題のように、同じものを区別しなくていいときにも組み合わせが使える。
+        </div>
+        <h4 class="common_seciton">例題</h4>
+        <div class="contents_h4">
+          <h5 class="common_h5">問3</h5>
+          <div class="contents_h5">
+            <div class="question">
+              問. 12本のくじの中に当たりくじが 4 本入っている。<br>同時に2本引くとき、2本とも当たりとなる確率を求めよ。
+            </div>
+          </div>
+          <h5 class="common_h5">解説</h5>
+          <div class="contents_h5">
+            <h6 class="common_h6">[step1]</h6>
+            <div class="contents_h6">
+              2本とも当たりくじを引く事象をA、全事象をUとし、それぞれの場合の数を n(A)、n(U) と表す。<br>
+              <span class="strong_22">n(U) = <span class='soezji'>12</span>C<span class='soezji'>2</span></span> = 12 * 11 / 2 * 1 = 66（通り）<br>
+            </div>
+            <h6 class="common_h6">[step2]</h6>
+            <div class="contents_h6">
+              4本から2本を選ぶ場合の数n(A) は<br>
+              <span class="strong_22">n(A) = <span class='soezji'>4</span>C<span class='soezji'>2</span></span> = 4 * 3 / 2 * 1 = 6（通り）<br>
+            </div>
+            <h6 class="common_h6">[step3]</h6>
+            <div class="contents_h6">
+              よって求める確率P(A)は<br>
+              <span class="strong_18">P(A) = 6/66 = 1/11</span><br>
+              となる
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="common_footer">
+      <p class="link"><a href="../index.html">TOPへ戻る</a></p>
+    </div>
+  </body>
+</html>
