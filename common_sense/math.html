@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/tooltips.css">
+    <link rel="stylesheet" href="../css/english.css">
+    <link rel="icon" type="image/png" href="../img/pochama.png">
+    <title>一般常識 - 数学 -</title>
+  </head>
+  <body>
+    <div class="common_top">
+      <h2 class="title_h2">数学</h2>
+    </div>
+    <div class="common_index">
+      <h3 class="common_index_title">目次</h3>
+      <ul class="list_decimal">
+        <li><a href="#syugo">集合</a></li>
+        <li><a href="#kakuritsu">確率</a></li>
+        <li><a href="#junretsu">順列</a></li>
+        <li><a href="#kumiawase">組み合わせ</a></li>
+      </ul>
+    </div>
+    <div class="common_contents">
+      <h3 class="common_h3"><a name="kakuritsu">集合や確率、組みあわせ</a></h3>
+      <div class="contents_h3">
+        <h4 class="common_seciton">集合</h4>
+        <div class="contents_h4">
+          <h5 class="common_h5">集合の表現方法</h5>
+          <div class="contents_h5">
+            <h6 class="common_h6">属する</h6>
+            <div class="contents_h6">
+              aが集合Aの要素であるとき、<span class="strong_nomal"> a ∊ A またはA ∍ a と表する。</span><br>
+              bが集合Aの要素ではないとき、<span class="strong_nomal"> b ∉ A またはA ∌ b と表する。</span>
+            </div>
+            <h6 class="common_h6">集合の表記方法</h6>
+            <div class="contents_h6">
+              例えば1から10の自然数のうち、機数全体をAとすると、1,3,5,7,9を要素とする集合になる。このことを記号で表現する時、次の2つの方法がある。
+              <ul class="list_decimal">
+                <li>具体的な要素を書く方法</li>
+                  中かっこを用いて、<span class="strong_nomal">A = {1,3,5,7,9}</span>
+                <li>条件を書く方法</li>
+                  A = {X | 1 ≦ x ≦ 10, xは奇数}
+              </ul>
+              <h6 class="common_h7">例1：1から100までの偶数の集合体</h6>
+              <div class="contents_h7">
+                1から100までの偶数の集合体は
+                <ul class="list_decimal">
+                  <li>要素を書く場合</li>
+                    A = {2,4,6,…100}
+                  <li>条件を書く場合</li>
+                    A = {x | 1 ≦ x ≦ 100, xは偶数}<br>
+                    または<br>
+                    A = {2x | 1 ≦ x ≦ 50, xは自然数}
+                </ul>
+              </div>
+              <h6 class="common_h7">例2：自然数のうち，3の倍数全体の集合Ａ</h6>
+              <div class="contents_h7">
+                <ul class="list_decimal">
+                  <li>要素を書く場合</li>
+                    A = {3,6,9…}
+                  <li>条件を書く場合</li>
+                    A = {3n | nは自然数}
+                </ul>
+              </div>
+            </div>
+            <h5 class="common_h5">集合の種類</h5>
+            <div class="contents_h5">
+              <h6 class="common_h6">部分集合</h6>
+              <div class="contents_h6">
+                2つの集合A,Bについて、Aのどの要素もBの要素である場合、<span class="strong_nomal">AはBの部分集合であると言い、A ⊂ BまたはB ⊃ A</span>と表す。<br>
+                A ∩ B = {x | x∈A かつ x∈B}となる。<br>
+                <img src="./img/bubun_syugo.png" alt="部分集合" title="部分集合" width="20%">
+              </div>
+              <h6 class="common_h6">共通部分と和集合</h6>
+              <div class="contents_h6">
+                2つの集合A,Bについて、<span class="strong_nomal">AとBのどちらにも共通に属する要素全体の集合をAとBの共通部分であると言い、A ∩ B</span>と表す。<br>
+                例えば、A = {4n | nは自然数}、B = {2n | nは自然数}のとき、Aは4の倍数、Bは2の倍数だから集合Aの要素は全て集合Bの要素（A ⊂ B）となる。<br>
+                また、<span class="strong_nomal">AかBの少なくとも一方に属する要素全体の集合をAとBの和集合といい、A∪Bと</span>表す。<br>
+                ∩は"cap"または"かつ"、∪は"cup"または"または"と呼ばれる。<br>
+                <img src="./img/wa_syugo.png" alt="共通部分と和集合" title="共通部分と和集合" width="20%">
+              </div>
+              <h6 class="common_h6">全体集合と補集合</h6>
+              <div class="contents_h6">
+                1つの集合Uを指定して、<span class="strong_nomal">Uの要素やUの部分だけを考えるとき、Uを全体集合</span>と言う。<br>
+                全体集合Uの部分集合Aに対して、Aに属さないUの要素全体をUに関する補集合といい、Āと表する。<br>
+                以下の様な関係式が成り立つ。<br>
+                A ∪ Ā = U <br>
+                A ∩ Ā = φ<br>
+                <img src="./img/ho_syugo.png" alt="全体集合と補集合" title="全体集合と補集合" width="20%"><br>
+                ド・モルガンの法則<br>
+                <img src="./img/do_morgan0.jpg" alt="ド・モルガンの法則" title="ド・モルガンの法則" width="25%"><br>
+                <img src="./img/do_morgan.jpg" alt="ド・モルガンの法則" title="ド・モルガンの法則" width="40%"><br>
+                「AかつB」でない、を図示すると上図の左のブルー部分になる。一方、「Aでない」は上図中央、「Bでない」は上図右だ。両者のいずれかが真である「または」、つまり「和」を考えると、そのブルー部分は「AかつB」でない、と全く同じになる。<br>
+                「AまたはB」でない、を図示したのが下図左のブルーの部分。一方、「Aでない」と「Bでない」は上図の中央および右と全く同じ。両者のいずれも真である「かつ」、つまり「積」を考えてみると、そのブルー部分は「AまたはB」でない
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="common_seciton">確率</h4>
+        <div class="contents_h4">
+          <h5 class="common_h5">確率の求め方</h5>
+          <div class="contents_h5">
+            <div class="one_point">
+              <h6 class="common_h6">関連用語</h6>
+              <ul class="list_none">
+                <li>試行：同じ状態のもとで繰り返し行なうことができて、その結果が偶然に支配される実験や観察</li>
+                <li>事象：試行の結果として起こる事がら。A,B,Cなどの文字を用いて表す。</li>
+                <li>全事象：起こりうる場合全体の事象。アルファベットのUで表す。</li>
+                <li>空事象：決して起こらない事象。φ（ファイ）と表す。</li>
+                <li>根元事象：さらに細かく分解して考えることができない事象</li>
+              </ul>
+            </div>
+            A が起こる確率 P(A) は<br>
+            <span class="strong_22">P(A) = n(A) / n(U)</span> = 事象Aの起こり得る場合の数 / 起こり得る全ての場合の数<br>
+          </div>
+          <h5 class="common_h5">例題</h5>
+          <div class="contents_h5">
+            <h6 class="common_h6">問題1</h6>
+            <div class="contents_h6">
+              <div class="question">
+                問<br>
+                1個のさいころを投げる試行において、出る目が3の場合、偶数の場合それぞれの確率は？
+              </div>
+            </div>
+            <h6 class="common_h6">解説</h6>
+            <div class="contents_h6">
+              <h6 class="common_h7">Step1</h6>
+              <div class="contents_h7">
+                全体集合Uを求める<br>
+                U = {1,2,3,4,5,6}
+              </div>
+              <h6 class="common_h7">Step2</h6>
+              <div class="contents_h6">
+                3の目が出る事象をA,偶数の目が出る事象をBとすると<br>
+                A = {3}<br>
+                B = {2,4,6}<br>
+              </div>
+              <h6 class="common_h7">Step3</h6>
+              <div class="contents_h7">
+                P(A) = 1/6<br>
+                P(B) = 3/6 = 1/2<br>
+              </div>
+            </div>
+            <h6 class="common_h6">問題2</h6>
+            <div class="contents_h6">
+              <div class="question">
+                問<br>
+                赤玉3個、青玉2個入った袋から3個の玉を取り出すとき，赤玉1個と青玉2個である確率は？
+              </div>
+            </div>
+            <h6 class="common_h6">解説</h6>
+            <div class="contents_h6">
+              <h6 class="common_h7">Step1</h6>
+              <div class="contents_h7">
+                全体集合Uの事象の個数を求める<br>
+                n(U) = <span class='soeji'>5</span>C<span class='soeji'>3</span> = 10
+              </div>
+              <h6 class="common_h7">Step2</h6>
+              <div class="contents_h7">
+                赤玉1個と青玉2個を取り出す事象をBの個数を求める<br>
+                n(B) = <span class='soeji'>3</span>C<span class='soeji'>1</span> * <span class='soeji'>2</span>C<span class='soeji'>2</span> = 3
+              </div>
+              <h6 class="common_h7">Step3</h6>
+              <div class="contents_h7">
+                したがって、袋の中から3個取り出したとき、赤玉1個、青玉2個である確率P(B)は
+                P(B) = <span class='soeji'>3</span>C<span class='soeji'>1</span> * <span class='soeji'>2</span>C<span class='soeji'>2</span> / <span class='soeji'>5</span>C<span class='soeji'>3</span>
+              </div>
+            </div>
+          </div>
+          <div class="one_point">
+            <h6 class="common_h7">まとめ</h6>
+            <ul class="list_decimal">
+              <li>事象は集合の形で表現される</li>
+              <li>P(U) = 1</li>
+              <li>P(φ) = 0</li>
+              <li>n(φ) ≦ n(A) ≦ n(U)　なので、 辺々n(U)で割ると、0 ≦ P(A) ≦ 1となる</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="common_seciton"><a name="junretsu">順列</a></h4>
+        <div class="contents_h4">
+          <h5 class="common_h5">順列の求め方</h5>
+          <div class="contents_h5">
+            人の並び方など、順番に意味がある問題では、順列の考え方で場合の数を求められる。<br>
+            A、B が隣り合う事象をX、全事象をUとし、それぞれの場合の数を n(X)、n(U) とすると以下のようになる。<br>
+            <span class="strong_22">P(A) = n(A) / n(U)</span>
+          </div>
+          <h5 class="common_h5">例題</h5>
+          <div class="contents_h5">
+            <h6 class="common_h6">問2</h6>
+            <div class="contents_h6">
+              <div class="question">
+                問. A、B、C、D、E の 5 人が 1 列に並ぶとき A、B が隣り合う確率を求めよ。
+              </div>
+            </div>
+          </div>
+          <h5 class="common_h5">解説</h5>
+          <div class="contents_h5">
+            <h6 class="common_h6">[step1]</h6>
+            <div class="contents_h6">
+            n(U) は 5 人全員の並び方の総数であるから、<br>
+            n(U) = <span class='soeji'>5</span>P<span class='soeji'>5</span> = 5! = 5 * 4 * 3 * 2 * 1 = 120<br>
+            となる。<br>
+            </div>
+            <h6 class="common_h6">[step2]</h6>
+            <div class="contents_h6">
+              A、B が隣り合う並び方は、A、B の 2 人をまとめて 1 人ととらえ、4 人の並べ方を考えたあと、A、B の並べ方を考えればよい。<br>
+              4 人の並べ方は<span class='soeji'>4</span>P<span class='soeji'>4</span>、2 人の並べ方は <span class='soeji'>2</span>P<span class='soeji'>2</span>であるから、<br>
+              n(X) = <span class='soeji'>4</span>P<span class='soeji'>4</span> * <span class='soeji'>2</span>P<span class='soeji'>2</span> = 4! * 2! = 4 * 3 * 2 * 1 * 2 * 2 * 1 = 24 * 2 = 48<br>
+            </div>
+            <h6 class="common_h6">[step3]</h6>
+            <div class="contents_h6">
+              よって結果は<br><span class="strong_18">P(X) = n(X) / n(U) = 48/120 = 2/5</span><br>となる。
+            </div>
+          </div>
+        </div>
+        <h4 class="common_seciton"><a name="kumiawase">組み合わせ</a></h4>
+        <div class="contents_h4">
+          <h5 class="common_h5">組み合わせの求め方</h5>
+          <div class="contents_h5">
+            ただ何かを選ぶ／取り出すなど、順番を考える必要がないときは、組み合わせの考えで解くことができる。<br>
+            この問題のように、同じものを区別しなくていいときにも組み合わせが使える。
+          </div>
+          <h5 class="common_h5">例題</h5>
+          <div class="contents_h5">
+            <h6 class="common_h6">問3</h6>
+            <div class="contents_h6">
+              <div class="question">
+                問. 12本のくじの中に当たりくじが 4 本入っている。<br>同時に2本引くとき、2本とも当たりとなる確率を求めよ。
+              </div>
+            </div>
+            <h6 class="common_h6">解説</h6>
+            <div class="contents_h6">
+              <h6 class="common_h6">[step1]</h6>
+              <div class="contents_h6">
+                2本とも当たりくじを引く事象をA、全事象をUとし、それぞれの場合の数を n(A)、n(U) と表す。<br>
+                <span class="strong_22">n(U) = <span class='soeji'>12</span>C<span class='soeji'>2</span></span> = 12 * 11 / 2 * 1 = 66（通り）<br>
+              </div>
+              <h6 class="common_h6">[step2]</h6>
+              <div class="contents_h6">
+                4本から2本を選ぶ場合の数n(A) は<br>
+                <span class="strong_22">n(A) = <span class='soeji'>4</span>C<span class='soeji'>2</span></span> = 4 * 3 / 2 * 1 = 6（通り）<br>
+              </div>
+              <h6 class="common_h6">[step3]</h6>
+              <div class="contents_h6">
+                よって求める確率P(A)は<br>
+                <span class="strong_18">P(A) = 6/66 = 1/11</span><br>
+                となる
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="syutten">
+        【出典】<br>
+        <a href="https://www.kwansei.ac.jp/hs/z90010/sugaku1/sugaku1.htm" target="_blank">放課後の数学入門</a><br>
+      </div>
+    </div>
+    <div class="common_footer">
+      <p class="link"><a href="../index.html">TOPへ戻る</a></p>
+    </div>
+  </body>
+</html>
