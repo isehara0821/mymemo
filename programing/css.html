@@ -2,15 +2,193 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sample.css">
+    <link rel="icon" type="image/png" href="../img/pochama.png">
     <title>CSSのメモ</title>
   </head>
   <body>
-    <h3 class="common_top">CSSのメモ</h3>
+    <div class="common_top">
+      <h2 class="title_h2">cssのメモ</h2>
+    </div>
+
+    <div class="common_index">
+      <h4 class="common_index_title">css関連目次</h4>
+      <ul class="list_decimal">
+        <li><a href="#index-css">htmlにCSSを読み込ませたい</a></li>
+        <li><a href="#index-border">要素の周りに線を引きたい（border）</a></li>
+        <li><a href="#index-font">fontの種類や文字の太さを変えたい。（font）</a></li>
+        <li><a href="#index-fluorescence">蛍光ペン風に線を引きたい。（background: linear-gradient）</a></li>
+      </ul>
+    </div>
+
     <div class="common_contents">
-      <h3 class="common_midashi">CSSの適用方法</h4>
+      <h3 class="common_h3"><a name="index-css">CSSの適用方法</a></h3>
         <div>&lt;link rel="stylesheet" href="css/common.css"></div>
     </div>
+
+    <div class="common_contents">
+      <h3 class="common_h3"><a name="index-border">borderプロパティ</a></h3>
+      <div class="contents_h3">
+        borderは、要素の周りに線を引くためのプロパティ。
+      </div>
+      <div class="common_index_inner">
+        <h4 class="common_index_inner_title">borderプロパティ関連</h4>
+        <ul class="list_decimal">
+          <li><a href="#border">border</a></li>
+          <li><a href="#border-color">border-color</a></li>
+          <li><a href="#border-style">border-style</a></li>
+          <li><a href="#border-width">border-width</a></li>
+          <li>border-top</a></li>
+          <li>border-top-color</a></li>
+          <li>border-top-style</a></li>
+          <li>border-top-width</a></li>
+          <li>border-top</a></li>
+          <li>border-bottom-color</li>
+          <li>border-bottom-style</li>
+          <li>border-bottom-width</li>
+          <li>border-left</li>
+          <li>border-left-color</li>
+          <li>border-left-style</li>
+          <li>border-left-width</li>
+          <li>border-right</li>
+          <li>border-right-color</li>
+          <li>border-right-style</li>
+          <li>border-right-width</li>
+        </ul>
+      </div>
+      <h4 class="common_seciton"><a name="border">border</a></h4>
+      <div class="contents_h4">
+      </div>
+      <h4 class="common_seciton"><a name="border-color">border-color</a></h4>
+      <div class="contents_h4">
+      </div>
+      <h4 class="common_seciton"><a name="border-style">border-style</a></h4>
+      <div class="contents_h4">
+        線の種類を指定する。
+        <div class="one_point">
+          <h6 class="common_h6">border-styleのプロパティ</h6>
+          <ul class="list_none">
+            <li>none：ボーダーが表示されず、太さも0になる。表のセルなどのボーダーが重なり合う場合は他の値が優先される。初期値。</li>
+            <li>hidden：ボーダーが表示されず、太さも0になる。表のセルなどのボーダーが重なり合う場合はこの値が優先される。</li>
+            <li>solid：1本線で表示される。</li>
+            <li>double：2本線で表示される。</li>
+            <li>groove：立体的なくぼんだ線で表示される。</li>
+            <li>ridge：立体的な隆起した線で表示される。</li>
+            <li>inset：上と左のボーダーが暗く、下と右のボーダーが明るく表示され、ボーダーで囲まれた領域全体が立体的にくぼんだように表示される。</li>
+            <li>outset：上と左のボーダーが明るく、下と右のボーダーが暗く表示され、ボーダーで囲まれた領域全体が立体的に隆起したように表示される。</li>
+            <li>dashed：破線で表示される。</li>
+            <li>dotted：点線で表示される。</li>
+          </ul>
+        </div>
+        <h5 class="common_h5">border-styleの例</h5>
+        <p class="border-style-sample border-style-none">none</p>
+        <p class="border-style-sample border-style-hidden">hidden</p>
+        <p class="border-style-sample border-style-solid">solid</p>
+        <p class="border-style-sample border-style-groove">groove</p>
+        <p class="border-style-sample border-style-ridge">ridge</p>
+        <p class="border-style-sample border-style-inset">inset</p>
+        <p class="border-style-sample border-style-outset">outset</p>
+        <p class="border-style-sample border-style-dashed">dashed</p>
+        <p class="border-style-sample border-style-dotted">dotted</p>
+      </div>
+      <h4 class="common_seciton"><a name="border-width">border-width</a></h4>
+      <div class="contents_h4">
+      </div>
+    </div>
+
+    <div class="common_contents">
+      <h3 class="common_h3"><a name="index-font">fontプロパティ</a></h3>
+      <div class="common_index_inner">
+        <h4 class="common_index_inner_title">fontプロパティ関連</h4>
+        <ul class="list_decimal">
+          <li><a href="#font">font</a></li>
+          <li><a href="#font-style">font-style</a></li>
+          <li><a href="#font-variant">font-variant</a></li>
+          <li><a href="#font-weight">font-weight</a></li>
+          <li><a href="#font-size">font-size</a></li>
+          <li><a href="#font-adjust">font-size-adjust</a></li>
+          <li><a href="#font-family">font-family</a></li>
+          <li><a href="#font-stretch">font-stretch</a></li>
+        </ul>
+      </div>
+      <h4 class="common_seciton"><a name="font">font</a></h4>
+      <div class="contents_h4">
+      </div>
+      <h4 class="common_seciton"><a name="font-style">font-style</a></h4>
+      <div class="contents_h4">
+      </div>
+      <h4 class="common_seciton"><a name="font-variant">font-variant</a></h4>
+      <div class="contents_h4">
+      </div>
+      <h4 class="common_seciton"><a name="font-weight">bfont-weight</a></h4>
+      <div class="contents_h4">
+        <h5 class="common_h5">font-weightのプロパティ</h5>
+        <div class="contents_h5">
+          <h6 class="common_h6">数値で指定</h6>
+          <div class="contents_h6">
+            100、200、300、400、500、600、700、800、900でフォントの太さを指定する。太さが9種類用意されているフォントはあまりないため、数値を上下させても太さが変化しないことがある。標準の太さは400で、数値が小さくなるほど細く、大きくなるほど太くなる。
+          </div>
+          <h6 class="common_h6">キーワードで指定</h6>
+          <div class="contents_h6">
+            数字の代わりにキーワードでも指定できる。
+            <div class="one_point">
+              <h6 class="common_h6">font-weightのプロパティ</h6>
+              <ul class="list_none">
+                <li>normal：標準の太さ。（数値で400を指定した場合と同じ）</li>
+                <li>bold：一般的な太字の太さ。（数値で700を指定した場合と同じ）</li>
+                <li>lighter：相対的に一段階細くする。</li>
+                <li>bolder：相対的に一段階太くする。</li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="common_h5">font-weighteの例</h5>
+          <p class="font-weight-100">font-weight-100 太さ100</p>
+          <p class="font-weight-200">font-weight-200 太さ200</p>
+          <p class="font-weight-300">font-weight-300 太さ300</p>
+          <p class="font-weight-400">font-weight-400 太さ400</p>
+          <p class="font-weight-500">font-weight-500 太さ500</p>
+          <p class="font-weight-600">font-weight-600 太さ600</p>
+          <p class="font-weight-700">font-weight-700 太さ700</p>
+          <p class="font-weight-800">font-weight-800 太さ800</p>
+          <p class="font-weight-900">font-weight-900 太さ900</p>
+          <p class="font-weight-normal">font-weight-normal 標準の太さ（400と同じ）</p>
+          <p class="font-weight-bold">font-weight-bold 一般的な太字（700と同じ）</p>
+          <p class="font-weight-lighter">font-weight-lighter 相対的に一段階細</p>
+          <p class="font-weight-bolder">font-weight-bolder 相対的に一段階太く</p>
+        </div>
+        <h4 class="common_seciton"><a name="font-size">font-size</a></h4>
+        <div class="contents_h4">
+        </div>
+        <h4 class="common_seciton"><a name="font-size-adjust">font-size-adjust</a></h4>
+        <div class="contents_h4">
+        </div>
+        <h4 class="common_seciton"><a name="font-family">font-family</a></h4>
+        <div class="contents_h4">
+        </div>
+        <h4 class="common_seciton"><a name="font-stretch">font-stretch</a></h4>
+        <div class="contents_h4">
+        </div>
+      </div>
+    </div>
+
+    <div class="common_contents">
+      <h3 class="common_h3"><a name="index-fluorescence">蛍光ペンのように線を引きたい</a></h3>
+      <div class="contents_h3">
+        蛍光ペンのように表示するには、background: linear-gradient(transparent x%, 色 y%);を使う。<br>
+        x,yは文字の高さに対して、指定した色を消す割合を示す。つまり0%を指定すれば文字全体に指定した色がかかり、50%にすれば文字の下半分のみ指定した色がかかり、100%にすれば文字に指定した色がかからない。<br>
+        x < y にするとグラデーションになり、xが色づけの開始位置、yが指定した色の濃さに達する位置だと思われる。<br>
+        <h5 class="common_h5">蛍光ペンの例</h5>
+        <div class="contents_h5">
+          <p class="fluorescence-all">蛍光ペン 文字全体 0%, #99ff33 0%</p>
+          <p class="fluorescence-under">蛍光ペン 下線 50%, #99ff33 50%</p>
+          <p class="fluorescence-gradation">蛍光ペン グラデーション 50%, #99ff33 80%</p>
+          <p class="fluorescence-gradation2">蛍光ペン グラデーション 10%, #99ff33 90%</p>
+        </div>
+      </div>
+    </div>
+
     <div class="common_footer">
       <p class="link"><a href="../index.html">TOPへ戻る</a></p>
     </div>

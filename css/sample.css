@@ -1,0 +1,88 @@
+/* tooltipsを定義するcss */
+.border-style-sample{
+  border-width: 5px;
+  border-color: #6699ff;
+}
+.border-style-none{
+  border-style: none;
+}
+.border-style-hidden{
+  border-style: hidden;
+}
+.border-style-solid{
+  border-style: solid;
+}
+.border-style-double{
+  border-style: double;
+}
+.border-style-groove{
+  border-style: groove;
+}
+.border-style-ridge{
+  border-style: ridge;
+}
+.border-style-inset{
+  border-style: inset;
+}
+.border-style-outset{
+  border-style: outset;
+}
+.border-style-dashed{
+  border-style: dashed;
+}
+.border-style-dotted{
+  border-style: dotted;
+}
+/* font-weight */
+.font-weight-100{
+  font-weight: 100;
+}
+.font-weight-200{
+  font-weight: 200;
+}
+.font-weight-300{
+  font-weight: 300;
+}
+.font-weight-400{
+  font-weight: 400;
+}
+.font-weight-500{
+  font-weight: 500;
+}
+.font-weight-600{
+  font-weight: 600;
+}
+.font-weight-700{
+  font-weight: 700;
+}
+.font-weight-800{
+  font-weight: 800;
+}
+.font-weight-900{
+  font-weight: 900;
+}
+.font-weight-normal{
+  font-weight: normal;
+}
+.font-weight-bold{
+  font-weight: bold;
+}
+.font-weight-lighter{
+  font-weight: lighter;
+}
+.font-weight-border{
+  font-weight: border;
+}
+
+.fluorescence-all {
+  background: linear-gradient(transparent 0%, #99ff33 0%);
+}
+.fluorescence-under {
+  background: linear-gradient(transparent 50%, #99ff33 50%);
+}
+.fluorescence-gradation {
+  background: linear-gradient(transparent 50%, #99ff33 80%);
+}
+.fluorescence-gradation2 {
+  background: linear-gradient(transparent 10%, #99ff33 90%);
+}

@@ -22,6 +22,14 @@ h2{
   margin-right: 10px;
   padding: 10px;
 }
+.one_point{
+  border-radius: 0.7em;
+  border:outset 2px #00afcc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
 .common_top{
   background-color: #c1ffe0;
   border-radius: 1em;
@@ -59,16 +67,38 @@ h2{
   background: linear-gradient(to right top, #1e50a2 10%, transparent);
   border-radius:8px;
 }
+.common_index_inner{
+  background-color:#eaffff;
+  border:solid 1px #003f8e;
+  border-radius: 1em;
+  margin: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+.common_index_inner_title{
+  /*
+  border-bottom:dashed 2px #009999;
+  */
+  font-size: 16px;
+}
+.common_index_inner_title:after{
+  content: "";
+  height: 2px;
+  display: block;
+  background: -webkit-linear-gradient(to right top, #1e50a2 10%, transparent);
+  background: linear-gradient(to right top, #1e50a2 10%, transparent);
+  border-radius:8px;
+}
 h3{
   font-size: 19px;
 }
-.common_midashi{
+.common_h3{
   /*
   border-bottom:dashed 2px #009999;
   */
   font-size: 18px;
 }
-.common_midashi:after{
+.common_h3:after{
   content: "";
   height: 5px;
   display: block;
@@ -76,7 +106,7 @@ h3{
   background: linear-gradient(to right top, #009999 10%, transparent);
   border-radius:8px;
 }
-.common_midashi.memo_title{
+.common_h3.memo_title{
   list-style: decimal-leading-zero;
   font-weight: bolder;
 }
@@ -86,7 +116,7 @@ h4{
   padding:3px;
   padding-left:8px;
   margin-top:20px;
-  margin-bottom:7px;
+  margin-bottom:15px;
 }
 .common_seciton{
   border-left:4px solid #009999;
@@ -104,7 +134,7 @@ h5{
   margin-top: 10px;
   margin-left: 6px;
   margin-right: 0px;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 }
 .common_h5:after{
   content: "";
@@ -124,7 +154,7 @@ h6{
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 0px;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 }
 .common_h6:after{
   content: "";
@@ -132,6 +162,20 @@ h6{
   display: block;
   background: -webkit-linear-gradient(to right, #89c3eb, transparent);
   background: linear-gradient(to right, #89c3eb, transparent);
+}
+.h7{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+}
+.common_h7:after{
+  content: "";
+  height: 1px;
+  display: block;
+  background: -webkit-linear-gradient(to right, #00a1e9, transparent);
+  background: linear-gradient(to right, #00a1e9, transparent);
 }
 .ol1{
   list-style-type: decimal;
@@ -146,17 +190,26 @@ h6{
   list-style-type: lower-armenian;
 }
 ul{
-  list-style: none;
   margin-top: 3px;
   margin-bottom: 10px;
   padding-left: 3%;
+}
+.list_none{
+  list-style-type: none;
+  list-style-position: outside;
+  padding-left: 1%;
 }
 .list_decimal{
   list-style-type: decimal;
   list-style-position: outside;
 }
-.list_none{
+/* 黒丸 */
+.list_disc{
+  list-style-type: disc;
   list-style-position: outside;
+}
+.list_disc li{
+  padding-left: 0;
 }
 table{
   border: solid 2px #191970;
@@ -175,11 +228,11 @@ th{
 .table_th_orange{
   background-color: #ffd700;
 }
-.td_selection_left{
-  border-collapse: collapse;
-}
 td{
   border: solid 0.5px #191970;
+}
+.td_selection_left{
+  border-collapse: collapse;
 }
 .td_noborder{
   border: none;
@@ -188,7 +241,6 @@ td{
   text-align: center;
   vertical-align: middle;
 }
-
 .index_header{
   position:fixed;
   width: 100%;
@@ -201,6 +253,9 @@ td{
 p{
   text-indent: 1em;
 }
+.contents_h3{
+  margin-left: 10px;
+}
 .contents_h4{
   margin-left: 10px;
 }
@@ -208,6 +263,9 @@ p{
   margin-left: 10px;
 }
 .contents_h6{
+  margin-left: 10px;
+}
+.contents_h7{
   margin-left: 10px;
 }
 .index_1{
@@ -276,6 +334,6 @@ details[open] summary::before {
   font-weight: bold ;
   background: linear-gradient(transparent 50%, #99ff33 80%);
 }
-.soezji{
+.soeji{
   font-size: 2px;
 }
