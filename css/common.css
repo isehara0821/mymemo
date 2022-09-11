@@ -219,6 +219,11 @@ table{
   border: solid 1px #009854;
   margin-left: 22px;
 }
+.table_border_thin_nocolspace{
+  border: solid 1px #009854;
+  margin-left: 22px;
+  border-collapse: collapse;
+}
 th{
   border: solid 1px #191970;
 }
@@ -236,6 +241,90 @@ td{
 }
 .td_noborder{
   border: none;
+}
+.td_border_top_solid{
+  border-top: solid 0.5px #191970;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+.td_border_left_solid{
+  border-top: none;
+  border-left: solid 0.5px #191970;
+  border-right: none;
+  border-bottom: none;
+}
+.td_border_right_solid{
+  border-top: none;
+  border-left: none;
+  border-right: solid 0.5px #191970;
+  border-bottom: none;
+}
+.td_border_buttom_solid{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 0.5px #191970;
+}
+.td_border_top_left_solid{
+  border-top: solid 0.5px #191970;
+  border-left: solid 0.5px #191970;
+  border-right: none;
+  border-bottom: none;
+}
+.td_border_top_right_solid{
+  border-top: solid 0.5px #191970;
+  border-left: none;
+  border-right: solid 0.5px #191970;
+  border-bottom: none;
+}
+.td_border_top_buttom_solid{
+  border-top: solid 0.5px #191970;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 0.5px #191970;
+}
+.td_border_left_right_solid{
+  border-top: none;
+  border-left: solid 0.5px #191970;
+  border-right: solid 0.5px #191970;
+  border-bottom: none;
+}
+.td_border_left_buttom_solid{
+  border-top: none;
+  border-left: solid 0.5px #191970;
+  border-right: none;
+  border-bottom: solid 0.5px #191970;
+}
+.td_border_right_bottom_solid{
+  border-top: none;
+  border-left: none;
+  border-right: solid 0.5px #191970;
+  border-bottom: solid 0.5px #191970;
+}
+.td_border_no_top_solid{
+  border-top: none;
+  border-left: solid 0.5px #191970;
+  border-right: solid 0.5px #191970;
+  border-bottom: solid 0.5px #191970;
+}
+.td_border_no_left_solid{
+  border-top: solid 0.5px #191970;
+  border-left: none;
+  border-right: solid 0.5px #191970;
+  border-bottom: solid 0.5px #191970;
+}
+.td_border_no_right_solid{
+  border-top: solid 0.5px #191970;
+  border-left: solid 0.5px #191970;
+  border-right: none;
+  border-bottom: solid 0.5px #191970;
+}
+.td_border_no_buttom_solid{
+  border-top: solid 0.5px #191970;
+  border-left: solid 0.5px #191970;
+  border-right: solid 0.5px #191970;
+  border-bottom: none;
 }
 .td_center{
   text-align: center;
