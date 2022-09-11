@@ -1,0 +1,32 @@
+/* tableを定義するcss */
+
+table{
+  border: solid 2px #191970;
+  margin-top:10px
+}
+.table_border_thin{
+  border: solid 1px #009854;
+  margin-left: 22px;
+}
+th{
+  border: solid 1px #191970;
+}
+.table_th{
+  background-color: #afeeee;
+}
+.table_th_orange{
+  background-color: #ffd700;
+}
+td{
+  border: solid 0.5px #191970;
+}
+.td_selection_left{
+  border-collapse: collapse;
+}
+.td_noborder{
+  border: none;
+}
+.td_center{
+  text-align: center;
+  vertical-align: middle;
+}
