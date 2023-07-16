@@ -307,3 +307,34 @@ details[open] summary::before {
 .soeji{
   font-size: 2px;
 }
+.category_area{
+  background-color:#d5ffea;
+  border:solid 1px #009854;
+  border-radius: 1em;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+.category{
+  display: inline-block;
+  background-color: #f0ffff;
+  border:solid 2px #0e470e;
+  color: #0e472b;
+  text-decoration: none;
+  font-weight:10px;
+  padding: 4px 8px;
+  margin: 4px;
+  border-radius: 4px;
+}
+.preview {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+  z-index: 999;
+}

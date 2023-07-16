@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>タグ付けの例</title>
+</head>
+<body>
+  <input type="text" id="tag-input">
+  <button onclick="addTag()">タグを追加</button>
+  <div id="tag-container"></div>
+
+    <script>
+    function addTag() {
+    const tagInput = document.getElementById("tag-input");
+    const tagName = tagInput.value;
+    if (tagName.trim() === "") {
+        return;
+    }
+    const tagContainer = document.getElementById("tag-container");
+    const tag = document.createElement("span");
+    tag.textContent = tagName;
+    tag.classList.add("tag");
+    tagContainer.appendChild(tag);
+    tagInput.value = "";
+    }
+    </script>
+  
+  <style>
+    .tag {
+      display: inline-block;
+      background-color: #ccc;
+      color: #333;
+      padding: 4px 8px;
+      margin: 4px;
+      border-radius: 4px;
+    }
+  </style>
+</body>
+</html>
