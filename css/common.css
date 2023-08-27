@@ -6,6 +6,8 @@ body{
   font-size: 15px;
   background-color: #ffffe5;
   padding-bottom: 70px;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 h2{
   padding: 15px;
