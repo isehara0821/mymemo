@@ -38,3 +38,6 @@ td{
   vertical-align: middle;
   padding: 0px;
 }
+.nowrap{
+  white-space: nowrap;
+}
