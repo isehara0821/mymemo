@@ -7,10 +7,9 @@ body{
   background-color: #ffffe5;
   padding-bottom: 70px;
 }
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 640px) {
   body{
   font-family: "メイリオ","游明朝";
-  font-weight:500;
   font-size: 8px;
   background-color: #ffffe5;
   padding-bottom: 70px;
