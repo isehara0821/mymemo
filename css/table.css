@@ -8,6 +8,12 @@ table{
   border: solid 1px #009854;
   margin-left: 22px;
 }
+.table_border_thin2{
+  border: solid 1px #009854;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
 th{
   border: solid 1px #191970;
 }
