@@ -42,8 +42,12 @@ td{
 .td_img{
   text-align: center;
   vertical-align: middle;
-  padding: 0px;
 }
 .nowrap{
   white-space: nowrap;
+}
+.img_with_text{
+  padding : 0px;
+  margin-top : -10px;
+  margin-bottom : -20px;
 }
