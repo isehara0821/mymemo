@@ -43,6 +43,62 @@ td{
   text-align: center;
   vertical-align: middle;
 }
+.td_type_normal{
+  background-color: white;
+  color: black;
+}
+.td_type_honou{
+  background-color:red;
+  color: white;
+}
+.td_type_mizu{
+  background-color:blue;
+  color: white;
+}
+.td_type_koori{
+  background-color:#84ffff;
+  color: black;
+}
+.td_type_kusa{
+  background-color: lightgreen;
+  color: black;
+}
+.td_type_denki{
+  background-color: yellow;
+  color: black;
+}
+.td_type_jimen{
+  background-color: brown;
+  color: white;
+}
+.td_type_hagane{
+  background-color: gray;
+  color: white;
+}
+.td_type_esper{
+  background-color: palevioletred;
+  color: white;
+}
+.td_type_aku{
+  background-color: black;
+  color: white;
+}
+.td_type_hikou{
+  background-color: #c6ffff;
+  color: black;
+}
+.td_type_mushi{
+  background-color: #ffbf7f;
+  color:black;
+}
+.td_type_doku{
+  background-color: purple;
+  color: white;
+}
+.td_type_dragon{
+  background-color:darkgreen;
+  color: white;
+}
 .nowrap{
   white-space: nowrap;
 }
