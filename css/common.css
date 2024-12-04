@@ -1,7 +1,7 @@
 /* tooltipsを定義するcss */
 
 body{
-  font-family: "游明朝";
+  font-family: "Meiryo UI","游明朝";
   font-weight:500;
   font-size: 15px;
   background-color: #ffffe5;
@@ -9,7 +9,7 @@ body{
 }
 @media only screen and (max-width: 640px) {
   body{
-  font-family: "メイリオ","游明朝";
+  font-family: "Meiryo UI","游明朝";
   font-size: 8px;
   background-color: #ffffe5;
   padding-bottom: 70px;
@@ -135,6 +135,7 @@ h4{
 }
 .pad_h4{
   list-style: none;
+  font-size: 15px;
   margin-top: 3px;
   margin-bottom: 10px;
   padding-left: 8px;
@@ -146,6 +147,13 @@ h5{
   margin-right: 0px;
   margin-bottom: 10px;
 }
+.common_h5{
+  /*
+  border-bottom:dashed 2px #009999;
+  */
+  font-size: 16px;
+  font-weight: bold;
+}
 .common_h5:after{
   content: "";
   height: 4px;
@@ -154,6 +162,7 @@ h5{
   background: linear-gradient(to right, #8cc8b4, transparent);
 }
 .pad_h5{
+  font-size: 15px;
   list-style: none;
   margin-top: 3px;
   margin-bottom: 10px;
@@ -338,14 +347,25 @@ details[open] summary::before {
   margin: 4px;
   border-radius: 4px;
 }
-.preview {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 300px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 10px;
+.link-preview {
+  position: relative;
+  display: inline-block;
+}
+.link-preview .iframe-preview {
   display: none;
-  z-index: 999;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #127c35a6;
+  z-index: 10;
+}
+
+.link-preview:hover .iframe-preview {
+  display: block;
+}
+#prev{
+  padding: 20px;
+  background: #eaffea;
 }
