@@ -7,7 +7,6 @@
   <link rel="icon" type="image/png" href="./img/pochama.png">
   <title>目次</title>
 
-
   <style>
     #results {
         margin-top: 20px;
@@ -18,16 +17,11 @@
     }
 </style>
 
-
-
 </head>
 <body>
   <header class="index_header">
     <div>色々メモ</div>
-  </header>
-  <div class="index_contents">
-
-    <input type="text" id="searchBox" placeholder="検索キーワードを入力してください">
+    <input type="text" id="searchBox" placeholder="検索くん">
     <div id="results"></div>
   
     <script>
@@ -56,31 +50,28 @@
     })();
 
     searchBox.addEventListener('input', async function() {
-    const query = this.value.toLowerCase();
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = '';
+      const query = this.value.toLowerCase();
+      const resultsDiv = document.getElementById('results');
+      resultsDiv.innerHTML = '';
 
-    const results = pages.filter(page => 
-        page.title.toLowerCase().includes(query) || 
-        page.content.toLowerCase().includes(query)
-    );
+      const results = pages.filter(page => 
+          page.title.toLowerCase().includes(query) || 
+          page.content.toLowerCase().includes(query)
+      );
 
-    results.forEach(result => {
-        const div = document.createElement('div');
-        div.className = 'result-item';
-        div.innerHTML = `
-            <a href="${result.url}">${result.title}</a>
-            <div>${result.content}</div>
-        `;
-        resultsDiv.appendChild(div);
+      results.forEach(result => {
+          const div = document.createElement('div');
+          div.className = 'result-item';
+          div.innerHTML = `
+              <a href="${result.url}">${result.title}</a>
+              <div>${result.content}</div>
+          `;
+          resultsDiv.appendChild(div);
+      });
     });
-});
     </script>
-
-
-
-
-
+  </header>
+  <div class="index_contents">
 
     <ul>
       <li class="index_1">とりあえずメモ</li>
