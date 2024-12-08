@@ -6,25 +6,82 @@
   <link rel="stylesheet" href="./css/common.css">
   <link rel="icon" type="image/png" href="./img/pochama.png">
   <title>目次</title>
+
+
+  <style>
+    #results {
+        margin-top: 20px;
+    }
+    .result-item {
+        padding: 5px;
+        border-bottom: 1px solid #ddd;
+    }
+</style>
+
+
+
 </head>
 <body>
   <header class="index_header">
     <div>色々メモ</div>
-      <nav class="header_form">
-        <form class="search_form" method="get" action="http://www.google.co.jp/search" target="_blank">
-          <input type="text" name="q" placeholder="Google検索">
-          <input type="submit" name="btng" value="検索">
-          <input type="hidden" name="hl" value="ja">
-        </form>
-        <form class="search_form" method="get" action="http://www.google.co.jp/search" target="_blank">
-          <input type="text" name="q" placeholder="サイト内検索">
-          <input type="submit" name="btng" value="検索">
-          <input type="hidden" name="hl" value="ja">
-          <input type="hidden" name="sitesearch" value="./index.html">
-        </form>
-      </nav>
   </header>
   <div class="index_contents">
+
+    <input type="text" id="searchBox" placeholder="検索キーワードを入力してください">
+    <div id="results"></div>
+  
+    <script>
+          async function loadPageContent(url) {
+      try {
+          const response = await fetch(url);
+          if (!response.ok) throw new Error(`Failed to fetch ${url}`);
+          return await response.text();
+      } catch (error) {
+          console.error(error);
+          return "<p>コンテンツを読み込めませんでした。</p>";
+      }
+    }
+
+    // ページ情報を管理する配列
+    const pages = [
+        { title: "ホーム", url: "./index.html", content: "" },
+    ];
+
+    // ページのコンテンツを動的に読み込む
+    (async () => {
+        for (const page of pages) {
+            page.content = await loadPageContent(page.url);
+        }
+        console.log(pages); // コンテンツが含まれた状態で表示
+    })();
+
+    searchBox.addEventListener('input', async function() {
+    const query = this.value.toLowerCase();
+    const resultsDiv = document.getElementById('results');
+    resultsDiv.innerHTML = '';
+
+    const results = pages.filter(page => 
+        page.title.toLowerCase().includes(query) || 
+        page.content.toLowerCase().includes(query)
+    );
+
+    results.forEach(result => {
+        const div = document.createElement('div');
+        div.className = 'result-item';
+        div.innerHTML = `
+            <a href="${result.url}">${result.title}</a>
+            <div>${result.content}</div>
+        `;
+        resultsDiv.appendChild(div);
+    });
+});
+    </script>
+
+
+
+
+
+
     <ul>
       <li class="index_1">とりあえずメモ</li>
       <ul>
