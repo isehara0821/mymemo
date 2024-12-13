@@ -33,7 +33,7 @@ async function searchInHtmlContent(url, keyword) {
 
 // 検索ボタンのイベントリスナー
 document.getElementById('searchButton').addEventListener('click', () => {
-    const url = '/memo.html'; // 検索対象のHTMLファイルのURL
+    const url = './memo.html'; // 検索対象のHTMLファイルのURL
     const keyword = document.getElementById('searchBox').value; // 入力されたキーワード
     searchInHtmlContent(url, keyword);
 });
