@@ -44,6 +44,8 @@ async function searchInHtmlContent(url, keyword) {
 // 検索ボタンのイベントリスナー
 document.getElementById('searchButton').addEventListener('click', () => {
     const url = './other/memo.html'; // 検索対象のHTMLファイルのURL
-    const keyword = document.getElementById('searchBox').value; // 入力されたキーワード
-    searchInHtmlContent(url, keyword);
+    const keyword = document.getElementById('searchBox').value; // 入力されたキーワード 
+    if (keyword.trim() != "" ) {
+        searchInHtmlContent(url, keyword);
+    }
 });
