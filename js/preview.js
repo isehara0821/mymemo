@@ -32,7 +32,10 @@ async function searchInHtmlContent(url, keyword) {
 
         // 既存のコンテンツを下にずらす
         const contentDiv = document.getElementById('index_contents');
-        contentDiv.style.marginTop = `${resultsHeight + 20}px`; // 検索結果の高さ + 余白
+        contentDiv.style.marginTop = `${resultsHeight + 10}px`; // 検索結果の高さ + 余白
+        // 既存のコンテンツを下にずらす
+        const contentHeader = document.getElementById('index_header');
+        contentHeader.style.marginBottom = `${resultsHeight + 10}px`; // 検索結果の高さ + 余白
     } catch (error) {
         console.error('エラーが発生しました:', error);
     }
