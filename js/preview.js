@@ -21,11 +21,18 @@ async function searchInHtmlContent(url, keyword) {
                 // 抽出した行をそのまま挿入
                 const div = document.createElement('div');
                 div.innerHTML = line;
+                // div.textContent = line; // HTMLをそのまま表示したくない場合はtextContentを使用
                 resultsDiv.appendChild(div);
             });
         } else {
             resultsDiv.innerHTML = '<p>該当する結果がありません。</p>';
         }
+        // 検索結果の高さを取得
+        const resultsHeight = resultsDiv.offsetHeight;
+
+        // 既存のコンテンツを下にずらす
+        const contentDiv = document.getElementById('content');
+        contentDiv.style.marginTop = `${resultsHeight + 20}px`; // 検索結果の高さ + 余白
     } catch (error) {
         console.error('エラーが発生しました:', error);
     }
