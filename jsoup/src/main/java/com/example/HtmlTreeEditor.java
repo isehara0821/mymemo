@@ -22,7 +22,8 @@ public class HtmlTreeEditor extends JFrame {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            new HtmlTreeEditor("C:\\project\\history\\mymemo\\jsoup\\sample.html").setVisible(true);
+        //    new HtmlTreeEditor("C:\\project\\history\\mymemo\\jsoup\\sample.html").setVisible(true);
+            new HtmlTreeEditor("C:\\project\\history\\mymemo\\rekishi\\japan\\test_japan_index.html").setVisible(true);
         });
     }
 

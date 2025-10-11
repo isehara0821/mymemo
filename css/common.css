@@ -361,9 +361,12 @@ details[open] summary::before {
   border: 1px solid #127c35a6;
   z-index: 10;
 }
-
 .link-preview:hover .iframe-preview {
   display: block;
+}
+.div-text-block-bottom {
+  margin-bottom: 0.6em; 
+  padding-left: 1em;
 }
 #prev{
   padding: 20px;
