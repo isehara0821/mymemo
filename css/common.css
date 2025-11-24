@@ -368,6 +368,22 @@ details[open] summary::before {
   margin-bottom: 0.6em; 
   padding-left: 1em;
 }
+.font_color_black{
+  color: black;  
+}
+.font_color_same_background{
+  color: #d5ffea;  
+}
+.common_button{
+  background-color: #c1ffe0;
+  border-radius: 8px;  /* 角を丸くする（値が大きいほど丸くなる） */
+  transition: background-color 0.3s; /* 変化を滑らかにする */
+  border: none;  /* 境界線をなくす */
+}
+/* マウスオーバー時のスタイル */
+.common_button:hover {
+  background-color: #a5fcaa; /* ホバー時に背景色を少し濃い色に変える */
+}
 #prev{
   padding: 20px;
   background: #eaffea;
