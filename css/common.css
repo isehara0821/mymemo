@@ -45,7 +45,29 @@ h2{
   border-radius: 1em;
   border:solid 1px #002900;
   margin-bottom: 10px;
-  padding: 0;
+  padding-bottom: 1px;
+}
+.top_fixed{
+  position:fixed;
+  width: 98.4%;
+  top: 1px;
+  height: 70px;
+  padding-top: 1px;
+}
+.top_fix_dummy{
+  margin-top: 85px;
+}
+.common_footer{
+  background-color: #efffe0;
+  display: flex;
+  padding-top:10px;
+  padding-bottom:10px;
+  bottom: 0px;
+  width: 100%;
+  position:fixed;
+}
+.common_footer .link{
+  margin-right: 20px;
 }
 .common_contents{
   background-color:#eaffea;
@@ -282,18 +304,6 @@ p{
   margin-top:20px;
   padding-top:10px;
   border-top:1px dashed #007bbb;
-}
-.common_footer{
-  background-color: #efffe0;
-  display: flex;
-  padding-top:10px;
-  padding-bottom:10px;
-  bottom: 0px;
-  width: 100%;
-  position:fixed;
-}
-.common_footer .link{
-  margin-right: 20px;
 }
 summary {
 	cursor: pointer;
