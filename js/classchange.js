@@ -15,9 +15,9 @@ function toggleContent(targetLang) {
 
   // ② 各グループに対して処理を繰り返す
   groups.forEach(group => {
-    // グループ内のexmp_sentとtransitionを取得
+    // グループ内のexmp_sentとtranslateを取得
     const text1 = group.querySelector('.exmp_sent');
-    const text2 = group.querySelector('.transition');
+    const text2 = group.querySelector('.translate');
 
     // ③ クラスを交換（前回のトグル処理と同じ）
     if (text1 && text2) {
