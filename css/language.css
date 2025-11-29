@@ -18,3 +18,12 @@
   position: relative;  /* 相対配置を有効にする */
   top: 5px;
 }
+/* デフォルトでは表示するスタイル */
+.example-sentence {
+  display: block; 
+}
+
+/* 非表示にするためのクラス */
+.hidden {
+  display: none;
+}
