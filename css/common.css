@@ -63,30 +63,29 @@ h2{
   z-index: 100; /* 他の要素より手前に表示させる（任意） */
 }
 .top_fix_dummy{
-  margin-top: 153px;
+  margin-top: 70px;
 }
 .head_fixed_checkboxes{
-  font-size: 13px;
   position:fixed;
-  width: 96.1%;
-  top: 74px;
+  font-size: 13px;
+  width: 100%;
+  top: 0px;
   height: 50px;
   background-color: #c1ffe0;
-  border-radius: 1em;
   border:solid 1px #002900;
-  padding: 15px;
+  padding: 5px;
   margin-bottom: 10px;
   padding-bottom: 1px;
   z-index: 100; /* 他の要素より手前に表示させる（任意） */
 }
 .common_footer{
-  background-color: #efffe0;
+  position:fixed;
+  background-color: #ffffe5;
   display: flex;
   padding-top:10px;
   padding-bottom:10px;
   bottom: 0px;
   width: 100%;
-  position:fixed;
 }
 .common_footer .link{
   margin-right: 20px;

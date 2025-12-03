@@ -1,5 +1,7 @@
 .exmp_sent{
+  /*
   margin-left: 10px;
+  */
 }
 .translate{
   margin-left: 51.5px;
@@ -10,13 +12,13 @@
 }
 .sound-trigger{
   cursor: pointer; /* マウスカーソルを指の形にする */
-  margin-left: 10px;
-  width: 20px;
+  margin-left: 1px;
+  width: 15px;
   height: auto;
   border: 1px solid green;
   border-radius: 5px;
   position: relative;  /* 相対配置を有効にする */
-  top: 5px;
+  top: 2px;
 }
 /* デフォルトでは表示するスタイル */
 .example-sentence {
