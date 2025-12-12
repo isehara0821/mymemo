@@ -14,17 +14,16 @@
   </head>
   <body>
     <script src="../js/title_changer.js" page-title="各国の例文集" defer></script>
-    <div class="common_top top_fixed">
-      <h2>例文集</h2>
     <div class="head_fixed_checkboxes">
       <div id="language-toggles">
         <label><input type="checkbox" value="japanese" checked> 日本語</label>
         <label><input type="checkbox" value="chinese"> 中国語</label>
         <label><input type="checkbox" value="italian"> イタリア語</label>
+        <label><input type="checkbox" value="french"> フランス語</label>
         <label><input type="checkbox" value="spanish"> スペイン語</label>
         <label><input type="checkbox" value="portuguese"> ポルトガル語</label>
+        <label><input type="checkbox" value="dutch"> オランダ語</label>
         <label><input type="checkbox" value="german"> ドイツ語</label>
-        <label><input type="checkbox" value="french"> フランス語</label>
         <label><input type="checkbox" value="swedish"> スウェーデン語</label>
         <label><input type="checkbox" value="english"> 英語</label>
       </div>
@@ -33,707 +32,125 @@
         <button class="common_button"  onclick="checkAll(false)">全非表示</button>
       </div>
     </div>
-    </div>
     <div class="top_fix_dummy"></div>
     <div class="common_index">
       <h3 class="common_index_title">目次</h3>
       <ul class="list_decimal">
-        <li><a href="#index1">単語</a></li>
-        <li><a href="#index2">例文</a></li>
+        <li><a href="#index1">挨拶をする</a></li>
       </ul>
     </div>
-    <div class="common_contents">
-      <a name="index1"><h3 class="common_h3">単語</h3></a>
-      <div class="contents_h4">
-        <h4 class="common_section">挨拶</h4>
-        <div class="contents_h5">
-          <h6 class="common_h6"><span class="japanese">おはよう</span></h6>
-          <div class="contents_h6">
-            <div>中：
-              <audio class="click-sound" id="ohayo-chi" src="../sounds/chinese/ohayo.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="ohayo-chi" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent chinese hidden">早上好</span>
-            </div>
-            <div>伊：
-              <audio class="click-sound" id="ohayo-ita" src="../sounds/italian/ohayo.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="ohayo-ita" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent italian hidden">Buongiorno</span>
-            </div>
-            <div>仏：
-              <audio class="click-sound" id="ohayo-fra" src="../sounds/french/ohayo.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="ohayo-fra" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent french hidden">Bonjour</span>
-            </div>
-            <div>西：
-              <audio class="click-sound" id="ohayo-spa" src="../sounds/spanish/ohayo.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="ohayo-spa" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent spanish hidden">Buenos días</span>
-            </div>
-            <div>葡：
-              <audio class="click-sound" id="ohayo-por" src="../sounds/portuguese/ohayo.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="ohayo-por" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent portuguese hidden">Bom dia</span>
-            </div>
-            <div>独：
-              <audio class="click-sound" id="ohayo-ger" src="../sounds/german/ohayo.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="ohayo-ger" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent german hidden">Guten Morgen</span>
-            </div>
-            <div>瑞：
-              <audio class="click-sound" id="ohayo-swe" src="../sounds/swedish/ohayo.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="ohayo-swe" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent swedish hidden">God morgon</span>
-            </div>
-            <div>英：
-              <audio class="click-sound" id="ohayo-eng" src="../sounds/english/ohayo.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="ohayo-eng" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent english hidden">Good morning</span>
-            </div>
-          </div>
+    <div class="common_contents" id="index1">      <!-- 挨拶に関すること -->
+      <h4 class="common_section">挨拶をする</h4>
+      <div class="contents_h5" id="index1-1">
+        <h5 class="common_h5">初めまして</h5>
+        <div class="contents_h5">日：
+          <audio class="click-sound" id="index-jap" src="../sounds/japanese/example_sentence1.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index-jap" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black japanese">初めまして、私はアレックスです。</span>
         </div>
-
-        <div class="contents_h5">
-          <h6 class="common_h6"><span class="japanese">こんにちは</span></h6>
-          <div class="contents_h6">
-            <div>中：
-              <audio class="click-sound" id="konnichiwa-chi" src="../sounds/chinese/konnichiwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konnichiwa-chi" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent chinese hidden">你好</span>
-            </div>
-            <div>伊：
-              <audio class="click-sound" id="konnichiwa-ita" src="../sounds/italian/konnichiwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konnichiwa-ita" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent italian hidden">Ciao/Salve</span>
-            </div>
-            <div>仏：
-              <audio class="click-sound" id="konnichiwa-fra" src="../sounds/french/konnichiwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konnichiwa-fra" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent french hidden">Bonjour</span>
-            </div>
-            <div>西：
-              <audio class="click-sound" id="konnichiwa-spa" src="../sounds/spanish/konnichiwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konnichiwa-spa" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent spanish hidden">Hola</span>
-            </div>
-            <div>葡：
-              <audio class="click-sound" id="konnichiwa-por" src="../sounds/portuguese/konnichiwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konnichiwa-por" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent portuguese hidden">Olá</span>
-            </div>
-            <div>独：
-              <audio class="click-sound" id="konnichiwa-ger" src="../sounds/german/konnichiwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konnichiwa-ger" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent german hidden">Hallo</span>
-            </div>
-            <div>瑞：
-              <audio class="click-sound" id="konnichiwa-swe" src="../sounds/swedish/konnichiwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konnichiwa-swe" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent swedish hidden">God dag</span>
-            </div>
-            <div>英：
-              <audio class="click-sound" id="konnichiwa-eng" src="../sounds/english/konnichiwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konnichiwa-eng" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent english hidden">Hello</span>
-            </div>
-          </div>
+        <div class="contents_h5">中：
+          <audio class="click-sound" id="index-chi" src="../sounds/chinese/example_sentence1.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index-chi" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black chinese hidden">你好，我叫亚历克斯。</span>
         </div>
-
-        <div class="contents_h5">
-          <h6 class="common_h6"><span class="japanese">こんばんわ</span></h6>
-          <div class="contents_h6">
-            <div>中：
-              <audio class="click-sound" id="konbanwa-chi" src="../sounds/chinese/konbanwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konbanwa-chi" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent chinese hidden">晚上好</span>
-            </div>
-            <div>伊：
-              <audio class="click-sound" id="konbanwa-ita" src="../sounds/italian/konbanwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konbanwa-ita" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent italian hidden">Buonasera</span>
-            </div>
-            <div>仏：
-              <audio class="click-sound" id="konbanwa-fra" src="../sounds/french/konbanwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konbanwa-fra" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent french hidden">Bonsoir</span>
-            </div>
-            <div>西：
-              <audio class="click-sound" id="konbanwa-spa" src="../sounds/spanish/konbanwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konbanwa-spa" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent spanish hidden">Buenas noches</span>
-            </div>
-            <div>葡：
-              <audio class="click-sound" id="konbanwa-por" src="../sounds/portuguese/konbanwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konbanwa-por" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent portuguese hidden">Boa noite</span>
-            </div>
-            <div>独：
-              <audio class="click-sound" id="konbanwa-ger" src="../sounds/german/konbanwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konbanwa-ger" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent german hidden">Guten Abend</span>
-            </div>
-            <div>瑞：
-              <audio class="click-sound" id="konbanwa-swe" src="../sounds/swedish/konbanwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konbanwa-swe" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent swedish hidden">God kväll</span>
-            </div>
-            <div>英：
-              <audio class="click-sound" id="konbanwa-eng" src="../sounds/english/konbanwa.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="konbanwa-eng" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent english hidden">Good evening</span>
-            </div>
-          </div>
+        <div class="contents_h5">伊：
+          <audio class="click-sound" id="index-ita" src="../sounds/italian/example_sentence1.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index-ita" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black italian hidden">Piacere, (io) sono Alex.</span>
         </div>
-
-        <div class="contents_h5">
-          <h6 class="common_h6"><span class="japanese">おやすみ</span></h6>
-          <div class="contents_h6">
-            <div>中：
-              <audio class="click-sound" id="oyasumi-chi" src="../sounds/chinese/oyasumi.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="oyasumi-chi" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent chinese hidden">晚安</span>
-            </div>
-            <div>伊：
-              <audio class="click-sound" id="oyasumi-ita" src="../sounds/italian/oyasumi.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="oyasumi-ita" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent italian hidden">Buona notte</span>
-            </div>
-            <div>仏：
-              <audio class="click-sound" id="oyasumi-fre" src="../sounds/french/oyasumi.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="oyasumi-fre" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent french hidden">Bonne nuit</span>
-            </div>
-            <div>西：
-              <audio class="click-sound" id="oyasumi-spa" src="../sounds/spanish/oyasumi.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="oyasumi-spa" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent spanish hidden">Buenas noches</span>
-            </div>
-            <div>葡：
-              <audio class="click-sound" id="oyasumi-por" src="../sounds/portuguese/oyasumi.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="oyasumi-por" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent portuguese hidden">Boa noite</span>
-            </div>
-            <div>独：
-              <audio class="click-sound" id="oyasumi-ger" src="../sounds/german/oyasumi.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="oyasumi-ger" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent german hidden">Gute Nacht</span>
-            </div>
-            <div>瑞：
-              <audio class="click-sound" id="oyasumi-swe" src="../sounds/swedish/oyasumi.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="oyasumi-swe" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent swedish hidden">God natt</span>
-            </div>
-            <div>英：
-              <audio class="click-sound" id="oyasumi-eng" src="../sounds/english/oyasumi.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="oyasumi-eng" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent english hidden">Good night</span>
-            </div>
-          </div>
+        <div class="contents_h5">仏：
+          <audio class="click-sound" id="index-fra" src="../sounds/french/example_sentence1.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index-fra" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black french hidden">Enchanté, je suis Alex.</span>
         </div>
-
-        <div class="contents_h5">
-          <h6 class="common_h6"><span class="japanese">さようなら</span></h6>
-          <div class="contents_h6">
-            <div>中：
-              <audio class="click-sound" id="sayounara-chi" src="../sounds/chinese/sayounara.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sayounara-chi" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent chinese hidden">再見</span>
-            </div>
-            <div>伊：
-              <audio class="click-sound" id="sayounara-ita" src="../sounds/italian/sayounara.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sayounara-ita" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent italian hidden">Arrivederci</span>
-            </div>
-            <div>仏：
-              <audio class="click-sound" id="sayounara-fre" src="../sounds/french/sayounara.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sayounara-fre" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent french hidden">Au revoir</span>
-            </div>
-            <div>西：
-              <audio class="click-sound" id="sayounara-spa" src="../sounds/spanish/sayounara.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sayounara-spa" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent spanish hidden">Adiós</span>
-            </div>
-            <div>葡：
-              <audio class="click-sound" id="sayounara-por" src="../sounds/portuguese/sayounara.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sayounara-por" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent portuguese hidden">Adeus</span>
-            </div>
-            <div>独：
-              <audio class="click-sound" id="sayounara-ger" src="../sounds/german/sayounara.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sayounara-ger" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent german hidden">Auf Wiedersehen</span>
-            </div>
-            <div>瑞：
-              <audio class="click-sound" id="sayounara-swe" src="../sounds/swedish/sayounara.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sayounara-swe" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent swedish hidden">Hej då</span>
-            </div>
-            <div>英：
-              <audio class="click-sound" id="sayounara-eng" src="../sounds/english/sayounara.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sayounara-eng" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent english hidden">Goodbye</span>
-            </div>
-          </div>
+        <div class="contents_h5">西：
+          <audio class="click-sound" id="index-spa" src="../sounds/spanish/example_sentence1.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index-spa" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black spanish hidden">Encantado/a, soy Alex.</span>
         </div>
-        <div class="contents_h5">
-          <h6 class="common_h6"><span class="japanese">初めまして</span></h6>
-          <div class="contents_h6">
-            <div>中：
-              <audio class="click-sound" id="hajimemashite-chi" src="../sounds/chinese/hajimemashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="hajimemashite-chi" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent chinese hidden">很高兴认识你/很高興認識你</span>
-            </div>
-            <div>伊：
-              <audio class="click-sound" id="hajimemashite-ita" src="../sounds/italian/hajimemashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="hajimemashite-ita" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent italian hidden">Piacere</span>
-            </div>
-            <div>仏：
-              <audio class="click-sound" id="hajimemashite-fre" src="../sounds/french/hajimemashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="hajimemashite-fre" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent french hidden">Enchanté</span>
-            </div>
-            <div>西：
-              <audio class="click-sound" id="hajimemashite-spa" src="../sounds/spanish/hajimemashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="hajimemashite-spa" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent spanish hidden">Encantado/a</span>
-            </div>
-            <div>葡：
-              <audio class="click-sound" id="hajimemashite-por" src="../sounds/portuguese/hajimemashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="hajimemashite-por" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent portuguese hidden">Prazer</span>
-            </div>
-            <div>独：
-              <audio class="click-sound" id="hajimemashite-ger" src="../sounds/german/hajimemashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="hajimemashite-ger" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent german hidden">Freut mich</span>
-            </div>
-            <div>瑞：
-              <audio class="click-sound" id="hajimemashite-swe" src="../sounds/swedish/hajimemashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="hajimemashite-swe" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent swedish hidden">Trevligt att träffas</span>
-            </div>
-            <div>英：
-              <audio class="click-sound" id="hajimemashite-eng" src="../sounds/english/hajimemashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="hajimemashite-eng" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent english hidden">Nice to meet you</span>
-            </div>
-          </div>
+        <div class="contents_h5">葡：
+          <audio class="click-sound" id="index-por" src="../sounds/portuguese/example_sentence1.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index-por" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black portuguese hidden">Prazer, eu sou Alex.</span>
         </div>
-      
-        <div class="contents_h5">
-          <h6 class="common_h6"><span class="japanese">ありがとう</span></h6>
-          <div class="contents_h6">
-            <div>中：
-              <audio class="click-sound" id="arigatou-chi" src="../sounds/chinese/arigatou.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="arigatou-chi" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent chinese hidden">谢谢/謝謝</span>
-            </div>
-            <div>伊：
-              <audio class="click-sound" id="arigatou-ita" src="../sounds/italian/arigatou.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="arigatou-ita" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent italian hidden">Grazie</span>
-            </div>
-            <div>仏：
-              <audio class="click-sound" id="arigatou-fre" src="../sounds/french/arigatou.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="arigatou-fre" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent french hidden">Merci</span>
-            </div>
-            <div>西：
-              <audio class="click-sound" id="arigatou-spa" src="../sounds/spanish/arigatou.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="arigatou-spa" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent spanish hidden">Gracias</span>
-            </div>
-            <div>葡：
-              <audio class="click-sound" id="arigatou-por" src="../sounds/portuguese/arigatou.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="arigatou-por" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent portuguese hidden">Obrigado/a</span>
-            </div>
-            <div>独：
-              <audio class="click-sound" id="arigatou-ger" src="../sounds/german/arigatou.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="arigatou-ger" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent german hidden">Danke</span>
-            </div>
-            <div>瑞：
-              <audio class="click-sound" id="arigatou-swe" src="../sounds/swedish/arigatou.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="arigatou-swe" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent swedish hidden">Tack</span>
-            </div>
-            <div>英：
-              <audio class="click-sound" id="arigatou-eng" src="../sounds/english/arigatou.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="arigatou-eng" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent english hidden">Thank you</span>
-            </div>
-          </div>
-        </div>    
-
-        <div class="contents_h5">
-          <h6 class="common_h6"><span class="japanese">どういたしまして</span></h6>
-          <div class="contents_h6">
-            <div>中：
-              <audio class="click-sound" id="douitashimashite-chi" src="../sounds/chinese/douitashimashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="douitashimashite-chi" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent chinese hidden">不客气/不客氣</span>
-            </div>
-            <div>伊：
-              <audio class="click-sound" id="douitashimashite-ita" src="../sounds/italian/douitashimashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="douitashimashite-ita" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent italian hidden">Prego</span>
-            </div>
-            <div>仏：
-              <audio class="click-sound" id="douitashimashite-fre" src="../sounds/french/douitashimashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="douitashimashite-fre" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent french hidden">De rien</span>
-            </div>
-            <div>西：
-              <audio class="click-sound" id="douitashimashite-spa" src="../sounds/spanish/douitashimashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="douitashimashite-spa" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent spanish hidden">De nada</span>
-            </div>
-            <div>葡：
-              <audio class="click-sound" id="douitashimashite-por" src="../sounds/portuguese/douitashimashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="douitashimashite-por" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent portuguese hidden">De nada</span>
-            </div>
-            <div>独：
-              <audio class="click-sound" id="douitashimashite-ger" src="../sounds/german/douitashimashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="douitashimashite-ger" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent german hidden">Gern geschehen</span>
-            </div>
-            <div>瑞：
-              <audio class="click-sound" id="douitashimashite-swe" src="../sounds/swedish/douitashimashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="douitashimashite-swe" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent swedish hidden">Varsågod</span>
-            </div>
-            <div>英：
-              <audio class="click-sound" id="douitashimashite-eng" src="../sounds/english/douitashimashite.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="douitashimashite-eng" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent english hidden">You're welcome</span>
-            </div>
-          </div>
+        <div class="contents_h5">蘭：
+          <audio class="click-sound" id="index-dut" src="../sounds/dutch/example_sentence1.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index-dut" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black dutch hidden">Aangenaam, ik ben Alex.</span>
         </div>
-        
-      </div>
-    </div>
-    <div class="common_contents">
-      <a name="index2"><h3 class="common_h3">例文</h3></a>
-      <div class="contents_h4">
-        <h4 class="common_section">挨拶をする</h4>
-        <div class="contents_h5">
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound1" src="../sounds/italian/Piacere_io_sono_Alex.mp3" type="audio/mpeg" preload="auto"></audio>
-              <img class="sound-trigger" data-target="sound1" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Piacere, io sono Alex.</span>
-            </div>
-            <div>西：
-              <audio class="click-sound" id="sound-s1" src="../sounds/spanish/Mucho_gusto_soy_Alex.mp3" type="audio/mpeg" preload="auto"></audio>
-              <img class="sound-trigger" data-target="sound-s1" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Mucho gusto, soy Alex.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">はじめまして、アレックスです。</span></div>
-          </div>
-          
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound2" src="../sounds/italian/Come_va_Alex.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound2" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Come va, Alex? </span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">アレックス、元気？私は元気だよ。</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound2-1" src="../sounds/italian/Va_bene.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound2-1" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Va bene. </span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">元気だよ。</span></div>
-          </div>
-          
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound3" src="../sounds/italian/A_presto_Alex.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound3" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">A presto, Alex?</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">またね、アレックス</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound4" src="../sounds/italian/Io_sono_di_Roma.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound4" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Io sono di Roma.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">ローマ出身です。</span></div>
-          </div>
-          
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound5" src="../sounds/italian/Alex_e_di_Milano.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound5" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Alex e di Milano.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">アレックスはミラノ出身です。</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound6" src="../sounds/italian/Tu_sei_di_Londra_vero.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound6" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Tu sei di Londra, vero?</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">君はロンドン出身だよね？</span></div>
-          </div>
-          
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound7" src="../sounds/italian/Io_ho_una_figlia_e_figlio.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound7" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Io ho una figlia è figlio.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">私には娘と息子がいます。</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound8" src="../sounds/italian/Hai_una_sorella_o_un_fratello.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound8" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Hai una sorella o un fratello?</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">あなたには兄か姉がいますか？</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound9" src="../sounds/italian/Lui_è_allegro.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound9" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Lui è allegro.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">彼は陽気です。</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound9-1" src="../sounds/italian/Che_ora_è.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound9-1" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Che ora è?</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">今何時？</span></div>
-          </div>
+        <div class="contents_h5">独：
+          <audio class="click-sound" id="index-ger" src="../sounds/german/example_sentence1.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index-ger" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black german hidden">Freut mich, ich bin Alex.</span>
+        </div>
+        <div class="contents_h5">瑞：
+          <audio class="click-sound" id="index-swe" src="../sounds/swedish/example_sentence1.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index-swe" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black swedish hidden">Trevligt att träffas, jag är Alex.</span>
+        </div>
+        <div class="contents_h5">英：
+          <audio class="click-sound" id="index-eng" src="../sounds/english/example_sentence1.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index-eng" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black english hidden">Nice to meet you, I'm Alex.</span>
         </div>
       </div>
 
-      <div class="contents_h4">
-        <h4 class="common_section">～がある。</h4>
-        <div class="contents_h5">
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound10" src="../sounds/italian/C'_è_un_teatro_qui.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound10" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">C' è un teatro qui.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">ここに劇場がある。</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound11" src="../sounds/italian/Ci_sono_due_mercati_qui.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound11" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Ci sono due mercati qui.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">ここに市場が二つある。</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound12" src="../sounds/italian/C'_è_un_bibilioteca_li_vero.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound12" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">C' è un bibilioteca li, vero?</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">あそこに図書館があるね？</div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound12-1" src="../sounds/italian/Prima_vado_in_banca_poi.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound12-1" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Prima vado in banca, poi vado al supermercato.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">まず銀行に行って、それからスーパーへ行きます。</div>
-          </div>
+      <div class="contents_h5" id="index1-1">
+        <h5 class="common_h5">調子を尋ねる</h5>
+        <div class="contents_h5">日：
+          <audio class="click-sound" id="index2-jap" src="../sounds/japanese/example_sentence2.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index2-jap" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black japanese">やぁ、アレックス。元気かい？ 元気だよ。</span>
         </div>
-      </div>
-
-      <div class="contents_h4">
-        <h4 class="common_section">現在形を使う</h4>
-        <div class="contents_h5">
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound13" src="../sounds/italian/Io_studio_italiano_con_Mario.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound13" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Io studio italiano con Mario.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">私はマリオとイタリア語を勉強しています。</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound14" src="../sounds/italian/Tu_studi_cinese_in_una_scuola_vero.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound14" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Tu studi cinese in una scuola, vero?</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">君はある学校で中国語を勉強しているね？</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound15" src="../sounds/italian/Io_parlo_inglese_e_tu.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound15" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Io parlo inglese, e tu?</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">私は英語を話します、あなたは？</span></div>
-          </div>
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound16" src="../sounds/italian/Certo_anche_io_parlo_inglese.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound16" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Certo, anche io parlo inglese.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">もちろん、私も英語を話します。</span></div>
-          </div>
+        <div class="contents_h5">中：
+          <audio class="click-sound" id="index2-chi" src="../sounds/chinese/example_sentence2.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index2-chi" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black chinese hidden">嗨，亚历克斯。你怎么样？ 我很好。</span>
         </div>
-      </div>
-
-      <div class="contents_h4">
-        <h4 class="common_section">性数一致を使う</h4>
-        <div class="contents_h5">
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound17" src="../sounds/italian/Io_ho_bisogno_di_una_mela.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound17" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Io ho bisogno di una mela.</span>
-            </div>
-            <div>日<span class="translate font_color_same_background">私はリンゴが必要です。</span></div>
-          </div>
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound18" src="../sounds/italian/Il_capplello_è_caro.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound18" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Il capplello è caro.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">帽子が高いです。</span></div>
-          </div>
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound19" src="../sounds/italian/La_gonna_è_economica.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound19" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">La gonna è economica.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">スカートが安いです。</span></div>
-          </div>
+        <div class="contents_h5">伊：
+          <audio class="click-sound" id="index2-ita" src="../sounds/italian/example_sentence2.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index2-ita" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black italian hidden">Ciao, Alex. Come stai? Sto bene.</span>
         </div>
-      </div>
-
-      <div class="contents_h4">
-        <h4 class="common_section">道を尋ねる</h4>
-        <div class="contents_h5">
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound20" src="../sounds/italian/Io_ho_bisogno_di_aiuto_Dov_è_la_stazione.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound20" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Io ho bisogno di aiuto. Dov' è la stazione?</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">助けが必要です。駅はどこですか？</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound21" src="../sounds/italian/Scusi_c_è_una_chiesa_lì.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound21" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Scusi, c' è una chiesa lì?</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">すみません、あそこに教会はありますか？</span></div>
-          </div>
-          
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound22" src="../sounds/italian/La_stazione_è_qui.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound22" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">La stazione è qui?</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">駅はここですか？</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound23" src="../sounds/italian/Mi_dispiace_io_non_parlo_arabo.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound23" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Mi dispiace, io non parlo arabo.</span>
-              </div> 
-              <div>日：<span class="translate font_color_same_background">申し訳ありません、私はアラビア語を話しません。</span></div>
-            </div>
-          </div>
+        <div class="contents_h5">伊：
+          <audio class="click-sound" id="index2-ita2" src="../sounds/italian/example_sentence2-1.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index2-ita2" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black italian hidden">Ciao, Alex. Come va? va bene.</span>
         </div>
-      
-      <div class="contents_h4">
-        <h4 class="common_section">レストランにやお店て</h4>
-        <div class="contents_h5">
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound24" src="../sounds/italian/Io_vorrei_la_torta.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound24" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Io vorrei la torta.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">私はケーキが欲しいです。</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound25" src="../sounds/italian/Le_torte_sono_buone_qui.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound25" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Le torte sono buone qui.</span>
-             <div>日：<span class="translate font_color_same_background"> ここのケーキは美味しいです。</span></div>
-            </div>
-          </div>
-  
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound26" src="../sounds/italian/Scusi_dov_è_il_ristorante_italiano.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound26" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Scusi, dov' è il ristorante italiano?</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">すみません、イタリアンレストランはどこですか？</span></div>
-          </div>
-  
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound27" src="../sounds/italian/La_pizza_è_buona.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound27" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">La pizza è buona.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">ピザは美味しいです。</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound28" src="../sounds/italian/Io_vorrei_il_conto_per_favore.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound28" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Io vorrei il conto, per favore.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">お会計をお願いします。</span></div>
-          </div>
-
-          <div class="color-switch-group">
-            <div>伊：
-              <audio class="click-sound" id="sound28" src="../sounds/italian/Ecco il cappotto.mp3" type="audio/mpeg"></audio>
-              <img class="sound-trigger" data-target="sound28" src="../img/soundbutton.png" alt="再生">
-              <span class="exmp_sent font_color_black">Ecco il cappotto.</span>
-            </div>
-            <div>日：<span class="translate font_color_same_background">ここに傘があります。</span></div>
-          </div>
+        <div class="contents_h5">仏：
+          <audio class="click-sound" id="index2-fra" src="../sounds/french/example_sentence2.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index2-fra" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black french hidden">Salut, Alex. Ça va? Ça va bien.</span>
+        </div>
+        <div class="contents_h5">西：
+          <audio class="click-sound" id="index2-spa" src="../sounds/spanish/example_sentence2.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index2-spa" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black spanish hidden">Hola, Alex. ¿Cómo estás? Estoy bien.</span>
+        </div>
+        <div class="contents_h5">葡：
+          <audio class="click-sound" id="index2-por" src="../sounds/portuguese/example_sentence2.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index2-por" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black portuguese hidden">Oi, Alex. Como você está? Estou bem.</span>
+        </div>
+        <div class="contents_h5">蘭：
+          <audio class="click-sound" id="index2-dut" src="../sounds/dutch/example_sentence2.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index2-dut" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black dutch hidden">Hé, Alex. Hoe gaat het? Het gaat goed.</span>
+        </div>
+        <div class="contents_h5">独：
+          <audio class="click-sound" id="index2-ger" src="../sounds/german/example_sentence2.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index2-ger" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black german hidden">Hey, Alex. Wie geht's? Mir geht's gut.</span>
+        </div>
+        <div class="contents_h5">瑞：
+          <audio class="click-sound" id="index2-swe" src="../sounds/swedish/example_sentence2.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index2-swe" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black swedish hidden">Hej, Alex. Hur mår du? Jag mår bra.</span>
+        </div>
+        <div class="contents_h5">英：
+          <audio class="click-sound" id="index2-eng" src="../sounds/english/example_sentence2.mp3" type="audio/mpeg" preload="auto"></audio>
+          <img class="sound-trigger" data-target="index2-eng" src="../img/soundbutton.png" alt="再生">
+          <span class="exmp_sent font_color_black english hidden">Hey, Alex. How are you? I'm fine.</span>
         </div>
       </div>
     </div>
