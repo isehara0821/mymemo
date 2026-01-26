@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+      <link rel="stylesheet" href="../../css/common.css">
+      <link rel="stylesheet" href="../../css/language.css">
+      <link rel="stylesheet" href="../../css/table.css">
+      <link rel="icon" type="image/png" href="../../img/pochama.png">
+      <script defer src="../../js/play_audio.js"></script>
+      <script defer src="../../js/hidden_checkbox.js"></script>
+      <title>各国の言葉（接続詞とか）</title>
+  </head>
+  <body>
+    <script src="../../js/title_changer.js" page-title="接続詞などの比較" defer></script>
+    <div class="head_fixed_checkboxes">
+      <div id="language-toggles">
+          <!--　<label><input type="checkbox" value="japanese" checked> 日本語</label> -->
+          <label><input type="checkbox" value="chinese"> 中国語</label>
+          <label><input type="checkbox" value="italian"> イタリア語</label>
+          <label><input type="checkbox" value="french"> フランス語</label>
+          <label><input type="checkbox" value="spanish"> スペイン語</label>
+          <label><input type="checkbox" value="portuguese"> ポルトガル語</label>
+          <label><input type="checkbox" value="dutch"> オランダ語</label>
+          <label><input type="checkbox" value="german"> ドイツ語</label>
+          <label><input type="checkbox" value="swedish"> スウェーデン語</label>
+          <label><input type="checkbox" value="english"> 英語</label>
+      </div>
+      <div>
+        <button class="common_button" onclick="checkAll(true)">全表示</button>
+        <button class="common_button"  onclick="checkAll(false)">全非表示</button>
+      </div>
+    </div>
+
+    <div class="top_fix_dummy"></div>
+    <div class="common_index">
+      <h3 class="common_index_title">目次</h3>
+      <ul class="list_decimal">
+        <li><a href="#5W1H">5W1H</a></li>
+      </ul>
+    </div>
+
+    <div class="common_contents" id="5W1H">       <!--5W1H-->
+      <h5 class="common_h5">5W1H</h5>
+      <table>
+        <thead class="table_th">
+          <tr>
+            <td>日本語</td>
+            <td>中国語</td>
+            <td>イタリア語</td>
+            <td>フランス語</td>
+            <td>スペイン語</td>
+            <td>ポルトガル語</td>
+            <td>オランダ語</td>
+            <td>ドイツ語</td>
+            <td>スウェーデン語</td>
+            <td>英語</td>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>いつ</td>
+          <td>
+            <audio class="click-sound" id="itsu-chi" src="../../sounds/chinese/itsu.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="itsu-chi" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent chinese hidden">什么时候</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="itsu-ita" src="../../sounds/italian/itsu.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="itsu-ita" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent italian hidden">quando</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="itsu-fra" src="../../sounds/french/itsu.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="itsu-fra" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent french hidden">quand</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="itsu-spa" src="../../sounds/spanish/itsu.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="itsu-spa" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent spanish hidden">cuándo</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="itsu-por" src="../../sounds/portuguese/itsu.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="itsu-por" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent portuguese hidden">quando</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="itsu-dut" src="../../sounds/dutch/itsu.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="itsu-dut" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent dutch hidden">wanneer</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="itsu-ger" src="../../sounds/german/itsu.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="itsu-ger" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent german hidden">wann</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="itsu-swe" src="../../sounds/swedish/itsu.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="itsu-swe" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent swedish hidden">när</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="itsu-eng" src="../../sounds/english/itsu.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="itsu-eng" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent english hidden">when</span>
+          </td>
+        </tr>
+        <tr>
+          <td>どこで</td>
+          <td>
+            <audio class="click-sound" id="dokode-chi" src="../../sounds/chinese/dokode.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="dokode-chi" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent chinese hidden">在哪里</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="dokode-ita" src="../../sounds/italian/dokode.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="dokode-ita" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent italian hidden">dove</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="dokode-fra" src="../../sounds/french/dokode.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="dokode-fra" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent french hidden">où</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="dokode-spa" src="../../sounds/spanish/dokode.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="dokode-spa" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent spanish hidden">dónde</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="dokode-por" src="../../sounds/portuguese/dokode.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="dokode-por" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent portuguese hidden">onde</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="dokode-dut" src="../../sounds/dutch/dokode.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="dokode-dut" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent dutch hidden">waar</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="dokode-ger" src="../../sounds/german/dokode.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="dokode-ger" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent german hidden">wo</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="dokode-swe" src="../../sounds/swedish/dokode.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="dokode-swe" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent swedish hidden">var</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="dokode-eng" src="../../sounds/english/dokode.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="dokode-eng" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent english hidden">where</span>
+          </td>
+        </tr>
+        <tr>
+          <td>だれが</td>
+          <td>
+            <audio class="click-sound" id="darega-chi" src="../../sounds/chinese/darega.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="darega-chi" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent chinese hidden">谁</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="darega-ita" src="../../sounds/italian/darega.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="darega-ita" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent italian hidden">chi</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="darega-fra" src="../../sounds/french/darega.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="darega-fra" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent french hidden">qui</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="darega-spa" src="../../sounds/spanish/darega.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="darega-spa" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent spanish hidden">quién</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="darega-por" src="../../sounds/portuguese/darega.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="darega-por" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent portuguese hidden">quem</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="darega-dut" src="../../sounds/dutch/darega.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="darega-dut" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent dutch hidden">wie</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="darega-ger" src="../../sounds/german/darega.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="darega-ger" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent german hidden">wer</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="darega-swe" src="../../sounds/swedish/darega.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="darega-swe" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent swedish hidden">vem</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="darega-eng" src="../../sounds/english/darega.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="darega-eng" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent english hidden">who</span>
+          </td>
+        </tr>
+        <tr>
+          <td>なにを</td>
+          <td>
+            <audio class="click-sound" id="naniwo-chi" src="../../sounds/chinese/naniwo.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naniwo-chi" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent chinese hidden">什么</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naniwo-ita" src="../../sounds/italian/naniwo.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naniwo-ita" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent italian hidden">che cosa</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naniwo-fra" src="../../sounds/french/naniwo.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naniwo-fra" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent french hidden">quoi</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naniwo-spa" src="../../sounds/spanish/naniwo.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naniwo-spa" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent spanish hidden">qué</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naniwo-por" src="../../sounds/portuguese/naniwo.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naniwo-por" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent portuguese hidden">o quê</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naniwo-dut" src="../../sounds/dutch/naniwo.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naniwo-dut" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent dutch hidden">wat</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naniwo-ger" src="../../sounds/german/naniwo.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naniwo-ger" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent german hidden">was</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naniwo-swe" src="../../sounds/swedish/naniwo.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naniwo-swe" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent swedish hidden">vad</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naniwo-eng" src="../../sounds/english/naniwo.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naniwo-eng" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent english hidden">what</span>
+          </td>
+        </tr>
+        <tr>
+          <td>なぜ</td>
+          <td>
+            <audio class="click-sound" id="naze-chi" src="../../sounds/chinese/naze.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naze-chi" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent chinese hidden">为什么</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naze-ita" src="../../sounds/italian/naze.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naze-ita" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent italian hidden">perché</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naze-fra" src="../../sounds/french/naze.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naze-fra" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent french hidden">pourquoi</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naze-spa" src="../../sounds/spanish/naze.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naze-spa" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent spanish hidden">por qué</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naze-por" src="../../sounds/portuguese/naze.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naze-por" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent portuguese hidden">por que</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naze-dut" src="../../sounds/dutch/naze.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naze-dut" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent dutch hidden">waarom</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naze-ger" src="../../sounds/german/naze.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naze-ger" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent german hidden">warum</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naze-swe" src="../../sounds/swedish/naze.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naze-swe" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent swedish hidden">varför</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="naze-eng" src="../../sounds/english/naze.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="naze-eng" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent english hidden">why</span>
+          </td>
+        </tr>
+        <tr>
+          <td>どのように</td>
+          <td>
+            <audio class="click-sound" id="donoyouni-chi" src="../../sounds/chinese/donoyouni.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="donoyouni-chi" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent chinese hidden">怎么</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="donoyouni-ita" src="../../sounds/italian/donoyouni.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="donoyouni-ita" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent italian hidden">come</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="donoyouni-fra" src="../../sounds/french/donoyouni.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="donoyouni-fra" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent french hidden">comment</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="donoyouni-spa" src="../../sounds/spanish/donoyouni.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="donoyouni-spa" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent spanish hidden">cómo</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="donoyouni-por" src="../../sounds/portuguese/donoyouni.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="donoyouni-por" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent portuguese hidden">como</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="donoyouni-dut" src="../../sounds/dutch/donoyouni.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="donoyouni-dut" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent dutch hidden">hoe</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="donoyouni-ger" src="../../sounds/german/donoyouni.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="donoyouni-ger" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent german hidden">wie</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="donoyouni-swe" src="../../sounds/swedish/donoyouni.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="donoyouni-swe" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent swedish hidden">hur</span>
+          </td>
+          <td>
+            <audio class="click-sound" id="donoyouni-eng" src="../../sounds/english/donoyouni.mp3" type="audio/mpeg" preload="none"></audio>
+            <img class="sound-trigger" data-target="donoyouni-eng" src="../../img/soundbutton.png" alt="再生">
+            <span class="exmp_sent english hidden">how</span>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="common_footer">
+      <p class="link"><a href="./each_country_soccor.html">サッカー用語へ</a></p>
+      <p class="link"><a href="./each_country_noun.html">名詞へ</a></p>
+      <p class="link"><a href="./each_country_adjective.html">形容詞へ</a></p>
+      <p class="link"><a href="./each_country_index.html">各国の言葉TOPへ</a></p>
+      <p class="link"><a href="../../index.html">TOPへ戻る</a></p>
+    </div>
+  </body>
+</html>
